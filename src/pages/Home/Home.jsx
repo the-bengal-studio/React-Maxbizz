@@ -1,11 +1,13 @@
 import React from "react";
-import SliderComponent from "../../components/SliderComponent/SliderComponent";
+import TopSlider from "../../components/TopSlider/TopSlider";
+import TopCarousel from "../../components/TopCarousel/TopCarousel";
 
 const Home = () => {
   return (
     <div>
-      {/* <SliderComponent></SliderComponent>
-      <section class="feature">
+      <TopSlider></TopSlider>
+      <TopCarousel></TopCarousel>
+      {/*<section class="feature">
         <div class="container">
           <div class="space-60 d-lg-none"></div>
           <div class="row justify-content-center">

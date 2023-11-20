@@ -138,9 +138,9 @@ const Header = () => {
               <div class="row">
                 <div class="col-lg-3">
                   <div class="site-logo">
-                    <a href="index-2.html">
+                    <Link to="/">
                       <img src="images/02_Black.svg" alt />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-9 text-center">
@@ -423,9 +423,9 @@ const Header = () => {
             <div class="row">
               <div class="col-5">
                 <div class="mobile_logo">
-                  <a href="index-2.html">
-                    <img src="images/02_Black.svg" alt="Betazen Infotech" />
-                  </a>
+                  <Link to="/">
+                    <img src="images/02_Black.svg" alt />
+                  </Link>
                 </div>
               </div>
               <div class="col-7 align-self-center text-right">
