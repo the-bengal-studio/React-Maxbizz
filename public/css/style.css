@@ -9351,7 +9351,7 @@ svg {
   fill: #fff;
 }
 .consulting-priorities {
-  background-image: url(images/background/bg1-home2.jpg);
+  background-image: url(/images/background/bg1-home2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
