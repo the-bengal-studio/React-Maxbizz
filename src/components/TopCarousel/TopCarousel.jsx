@@ -26,23 +26,23 @@ export default () => {
   });
   return (
     <div ref={sliderRef} className="keen-slider">
-      <div className="keen-slider__slide number-slide-all">
-        <img src="/public/images/client-logos/01.svg" alt="" />
+      <div className="keen-slider__slide number-slide-top">
+        <img src="/images/client-logos/01.svg" alt="" />
       </div>
-      <div className="keen-slider__slide number-slide-all">
-        <img src="/public/images/client-logos/02.svg" alt="" />
+      <div className="keen-slider__slide number-slide-top">
+        <img src="/images/client-logos/02.svg" alt="" />
       </div>
-      <div className="keen-slider__slide number-slide-all">
-        <img src="/public/images/client-logos/03.svg" alt="" />
+      <div className="keen-slider__slide number-slide-top">
+        <img src="/images/client-logos/03.svg" alt="" />
       </div>
-      <div className="keen-slider__slide number-slide-all">
-        <img src="/public/images/client-logos/04.svg" alt="" />
+      <div className="keen-slider__slide number-slide-top">
+        <img src="/images/client-logos/04.svg" alt="" />
       </div>
-      <div className="keen-slider__slide number-slide-all">
-        <img src="/public/images/client-logos/05.svg" alt="" />
+      <div className="keen-slider__slide number-slide-top">
+        <img src="/images/client-logos/05.svg" alt="" />
       </div>
-      <div className="keen-slider__slide number-slide-all">
-        <img src="/public/images/client-logos/06.svg" alt="" />
+      <div className="keen-slider__slide number-slide-top">
+        <img src="/images/client-logos/06.svg" alt="" />
       </div>
     </div>
   );

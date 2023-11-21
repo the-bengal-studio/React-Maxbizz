@@ -68,7 +68,7 @@ body {
   padding: 40px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 .text-top {
   background-color: rgb(75, 131, 252);
