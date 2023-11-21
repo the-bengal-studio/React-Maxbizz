@@ -4,12 +4,10 @@ import "keen-slider/keen-slider.min.css";
 import "./TeamCarousel.css";
 
 const animation = { duration: 100000, easing: (t) => t };
-
 export default () => {
   const [sliderRef] = useKeenSlider({
-    // loop: true,
     slides: {
-      perView: 5,
+      perView: window.innerWidth < 576 ? 1 : 5, // Show 1 image on mobile, 5 images on larger screens
       spacing: 15,
     },
     renderMode: "performance",
@@ -24,6 +22,21 @@ export default () => {
       s.moveToIdx(s.track.details.abs + 5, true, animation);
     },
   });
+
+  const handleResize = () => {
+    if (sliderRef.current) {
+      const perView = window.innerWidth < 576 ? 1 : 5;
+      sliderRef.current.details().widthContainer = window.innerWidth;
+      sliderRef.current.details().perView = perView;
+      sliderRef.current.resize();
+    }
+  };
+
+  React.useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [sliderRef]);
   return (
     <div ref={sliderRef} className="keen-slider">
       <div className="keen-slider__slide number-slide-team">

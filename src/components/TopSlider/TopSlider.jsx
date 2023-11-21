@@ -22,12 +22,14 @@ export default () => {
         <div ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide">
             <img src="/images/slider/slider1-home2.jpg" alt="" />
-            <div className="text-overlay">
-              <p className="text-top">DIVERSITY & INCLUSION</p>
-              <h1>
+            <div className="container text-overlay">
+              <p className="d-none d-sm-block mt-5 text-top ">
+                DIVERSITY & INCLUSION
+              </p>
+              <h2>
                 Global Presence is <br /> Key to Clients' <br /> Success Ideas
-              </h1>
-              <div class="ot-video-button flex-middle">
+              </h2>
+              <div class="d-none d-sm-block ot-video-button flex-middle">
                 <button className="octf-btn octf-btn-primary btn-slider btn-large">
                   EXPLORE MORE
                 </button>
@@ -44,12 +46,14 @@ export default () => {
           </div>
           <div className="keen-slider__slide">
             <img src="/images/slider/slider3-home2.jpg" alt="" />
-            <div className="text-overlay">
-              <p className="text-top">Best Financial Advice</p>
-              <h1>
+            <div className="container text-overlay">
+              <p className="d-none d-sm-block mt-5 text-top ">
+                Best Financial Advice
+              </p>
+              <h2>
                 We Help Move All <br /> Your Business <br /> Forward
-              </h1>
-              <div class="ot-video-button flex-middle">
+              </h2>
+              <div class="d-none d-sm-block ot-video-button flex-middle">
                 <button className="octf-btn octf-btn-primary btn-slider btn-large">
                   EXPLORE MORE
                 </button>

@@ -7,14 +7,10 @@ body {
 
 [class^="number-slide-team"],
 [class*=" number-slide-team"] {
-  background: #212529;
-  font-size: 50px;
   color: #fff;
   font-weight: 500;
-  height: 400px;
+  height: 300px;
   margin-bottom: 100px;
 }
 .number-slide-team img {
-  display: block;
-  width: 100%;
 }

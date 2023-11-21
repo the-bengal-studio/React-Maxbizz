@@ -21,6 +21,12 @@ body {
   height: 35px;
   max-width: 100%;
 }
-.keen-slider {
-  /* background: #212529; */
+.keen-slider-top {
+  background: #212529;
 }
+/* @media screen and (max-width: 768px) {
+  .number-slide-top {
+    display: grid;
+    grid-template-columns: 2;
+  }
+} */

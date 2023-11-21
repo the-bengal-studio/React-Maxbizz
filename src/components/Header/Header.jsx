@@ -430,16 +430,6 @@ const Header = () => {
               </div>
               <div class="col-7 align-self-center text-right">
                 <div class="octf-btn-cta">
-                  <div class="octf-cart-mobile octf-cart octf-cta-header">
-                    <a
-                      class="cart-contents"
-                      href="cart-page.html"
-                      title="View your shopping cart"
-                    >
-                      <i class="ot-flaticon-business"></i>
-                      <span class="count">2</span>
-                    </a>
-                  </div>
                   <div class="octf-search-mobile octf-search octf-cta-header">
                     <div class="toggle_search octf-cta-icons">
                       <i class="ot-flaticon-search-1"></i>
