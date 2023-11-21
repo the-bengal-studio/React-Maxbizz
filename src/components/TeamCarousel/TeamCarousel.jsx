@@ -7,7 +7,7 @@ const animation = { duration: 100000, easing: (t) => t };
 
 export default () => {
   const [sliderRef] = useKeenSlider({
-    loop: true,
+    // loop: true,
     slides: {
       perView: 5,
       spacing: 15,
@@ -26,7 +26,7 @@ export default () => {
   });
   return (
     <div ref={sliderRef} className="keen-slider">
-      <div className="keen-slider__slide number-slide-all">
+      <div className="keen-slider__slide number-slide-team">
         <div class="ot-team team-2 circle-social">
           <div class="team-thumb">
             <img src="images/team5.jpg" alt />
@@ -48,7 +48,7 @@ export default () => {
           </div>
         </div>
       </div>
-      <div className="keen-slider__slide number-slide-all">
+      <div className="keen-slider__slide number-slide-team">
         <div class="ot-team team-2 circle-social">
           <div class="team-thumb">
             <img src="images/team1.jpg" alt />
@@ -70,7 +70,7 @@ export default () => {
           </div>
         </div>{" "}
       </div>
-      <div className="keen-slider__slide number-slide-all">
+      <div className="keen-slider__slide number-slide-team">
         <div class="ot-team team-2 circle-social">
           <div class="team-thumb">
             <img src="images/team2.jpg" alt />
@@ -92,7 +92,7 @@ export default () => {
           </div>
         </div>{" "}
       </div>
-      <div className="keen-slider__slide number-slide-all">
+      <div className="keen-slider__slide number-slide-team">
         <div class="ot-team team-2 circle-social">
           <div class="team-thumb">
             <img src="images/team3.jpg" alt />
@@ -114,7 +114,7 @@ export default () => {
           </div>
         </div>{" "}
       </div>
-      <div className="keen-slider__slide number-slide-all">
+      <div className="keen-slider__slide number-slide-team">
         <div class="ot-team team-2 circle-social">
           <div class="team-thumb">
             <img src="images/team4.jpg" alt />
@@ -136,7 +136,7 @@ export default () => {
           </div>
         </div>{" "}
       </div>
-      <div className="keen-slider__slide number-slide-all">
+      <div className="keen-slider__slide number-slide-team">
         <div class="ot-team team-2 circle-social">
           <div class="team-thumb">
             <img src="images/team6.jpg" alt />
@@ -157,7 +157,7 @@ export default () => {
             </div>
           </div>{" "}
         </div>
-        <div className="keen-slider__slide number-slide-all">
+        <div className="keen-slider__slide number-slide-team">
           <div class="ot-team team-2 circle-social">
             <div class="team-thumb">
               <img src="images/team7.jpg" alt />
@@ -179,7 +179,7 @@ export default () => {
             </div>
           </div>{" "}
         </div>
-        <div className="keen-slider__slide number-slide-all">
+        <div className="keen-slider__slide number-slide-team">
           <div class="ot-team team-2 circle-social">
             <div class="team-thumb">
               <img src="images/team8.jpg" alt />

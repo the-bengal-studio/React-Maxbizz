@@ -166,7 +166,7 @@ sup {
 /* Embedded content
    ========================================================================== */
 /**
- * Remove the border on images inside links in IE 10.
+ * Remove the border on /images inside links in IE 10.
  */
 img {
   border-style: none;
@@ -901,14 +901,14 @@ dd {
 
 img {
   height: auto;
-  /* Make sure images are scaled correctly. */
+  /* Make sure /images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */
 }
 
 figure {
   margin: 1em 0;
-  /* Extra wide images within figure tags don't overflow the content area. */
+  /* Extra wide /images within figure tags don't overflow the content area. */
 }
 
 table {
@@ -8135,7 +8135,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   float: left;
 }
 .page-header-blog {
-  background-image: url("images/background/pheader-blog.jpg");
+  background-image: url("/images/background/pheader-blog.jpg");
 }
 .mobile_logo {
   padding: 22px 0;
@@ -8360,7 +8360,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   display: flex;
   align-items: center;
   color: #fff;
-  background: url(images/bg-404.jpg) center center no-repeat;
+  background: url(/images/bg-404.jpg) center center no-repeat;
   background-size: cover;
 }
 .error-404 .error-logo {
@@ -8403,7 +8403,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
 }
 /* Contact Page */
 .page-header-contact {
-  background-image: url(images/background/pheader-contacts.jpg);
+  background-image: url(/images/background/pheader-contacts.jpg);
 }
 .contact-iconb .icon-main {
   background: #fff3e9;
@@ -8463,7 +8463,7 @@ section {
 }
 /* About Us */
 .page-header-about {
-  background-image: url("images/background/pheader-about-us.jpg");
+  background-image: url("/images/background/pheader-about-us.jpg");
 }
 .about-author {
   margin-left: 15px;
@@ -8487,7 +8487,7 @@ section {
   border-right: 1px solid #00000026;
 }
 .about-work {
-  background-image: url(images/background/bg1-about-us.jpg);
+  background-image: url(/images/background/bg1-about-us.jpg);
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -8522,7 +8522,7 @@ svg {
   height: 35px;
 }
 .about-testi {
-  background-image: url(images/background/bg2-about-us.jpg);
+  background-image: url(/images/background/bg2-about-us.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8541,11 +8541,11 @@ svg {
 }
 /* Services */
 .page-header-service {
-  background-image: url(images/background/pheader-service.jpg);
+  background-image: url(/images/background/pheader-service.jpg);
 }
 .service-testi {
   background-color: #f8f8f8;
-  background-image: url(images/background/bg1-service-grid.jpg);
+  background-image: url(/images/background/bg1-service-grid.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8570,7 +8570,7 @@ svg {
   height: 38px;
 }
 .service-icon-testi {
-  background-image: url(images/background/bg1-service-icon.jpg);
+  background-image: url(/images/background/bg1-service-icon.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8610,10 +8610,10 @@ svg {
 }
 /* value */
 .page-header-valua {
-  background-image: url(images/background/pheader-value.jpg);
+  background-image: url(/images/background/pheader-value.jpg);
 }
 .valua-tab {
-  background-image: url(images/background/bg1-value.jpg);
+  background-image: url(/images/background/bg1-value.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8642,7 +8642,7 @@ svg {
   margin-bottom: 10px;
 }
 .main-principles {
-  background-image: url(images/background/bg2-value.jpg);
+  background-image: url(/images/background/bg2-value.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8656,14 +8656,14 @@ svg {
   color: #cccccc;
 }
 .value-testi {
-  background-image: url(images/background/bg3-value.jpg);
+  background-image: url(/images/background/bg3-value.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 /* Our Team */
 .page-header-team {
-  background-image: url(images/background/pheader-team.jpg);
+  background-image: url(/images/background/pheader-team.jpg);
 }
 .team-skill {
   background-color: #262832;
@@ -8683,7 +8683,7 @@ svg {
   background-color: #3b3d48;
 }
 .team-skill-right {
-  background-image: url(images/image1-team.jpg);
+  background-image: url(/images/image1-team.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 645px;
@@ -8871,7 +8871,7 @@ svg {
   border-radius: 5px;
 }
 .main-principles {
-  background-image: url(images/background/bg1-home1.jpg);
+  background-image: url(/images/background/bg1-home1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8906,7 +8906,7 @@ svg {
   margin-bottom: 10px;
 }
 .our-benefits {
-  background-image: url(images/background/bg-overlay-home1.png);
+  background-image: url(/images/background/bg-overlay-home1.png);
   background-position: 0px 28%;
   background-repeat: no-repeat;
 }
@@ -8937,7 +8937,7 @@ svg {
   color: #60626d;
 }
 .cta-main {
-  background-image: url(images/background/bg2-home1.jpg);
+  background-image: url(/images/background/bg2-home1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9050,7 +9050,7 @@ svg {
   background-image: linear-gradient(0deg, #ff8523, #ff8523);
 }
 .counter-main {
-  background-image: url(images/background/bg3-home1.jpg);
+  background-image: url(/images/background/bg3-home1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9408,7 +9408,7 @@ svg {
   background-color: #4b83fc;
 }
 .consulting-video {
-  background-image: url(images/background/image1-home2.jpg);
+  background-image: url(/images/background/image1-home2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9448,7 +9448,7 @@ svg {
   color: #4b83fc;
 }
 .consulting-testi {
-  background-image: url(images/background/bg3-home2.jpg);
+  background-image: url(/images/background/bg3-home2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9758,7 +9758,7 @@ svg {
   background-color: #d92300;
 }
 .team-skill-right.business-skill-right {
-  background-image: url(images/image2-home3.jpg);
+  background-image: url(/images/image2-home3.jpg);
 }
 .business-video-btn {
   position: absolute;
@@ -9803,7 +9803,7 @@ svg {
   font-weight: 600;
 }
 .business-pricing {
-  background-image: url(images/background/image3-home3.jpg);
+  background-image: url(/images/background/image3-home3.jpg);
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -10004,7 +10004,7 @@ svg {
   color: #fff;
 }
 .coporate-banner {
-  background-image: url(images/background/image-banner-home4.jpg);
+  background-image: url(/images/background/image-banner-home4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10186,7 +10186,7 @@ svg {
     hue-rotate(0deg);
 }
 .coporate-mkt {
-  background-image: url(images/background/bg1-home4.jpg);
+  background-image: url(/images/background/bg1-home4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10283,7 +10283,7 @@ svg {
   margin-bottom: 10px;
 }
 .coporate-team {
-  background-image: url(images/background/bg2-home4.jpg);
+  background-image: url(/images/background/bg2-home4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10309,7 +10309,7 @@ svg {
   margin-top: -190px;
 }
 .coporate-testi .container {
-  background-image: url(images/background/bg1-home4.jpg);
+  background-image: url(/images/background/bg1-home4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10528,7 +10528,7 @@ svg {
   color: #fff;
 }
 .finance-banner {
-  background-image: url(images/background/image-banner-home5.jpg);
+  background-image: url(/images/background/image-banner-home5.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10794,7 +10794,7 @@ svg {
   background-color: #30344d;
 }
 .finance-testi-bg {
-  background-image: url(images/image1-home5.jpg);
+  background-image: url(/images/image1-home5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 694px;
@@ -10884,7 +10884,7 @@ svg {
   color: #ffffff;
 }
 .finance-blog {
-  background-image: url(images/background/bg1-home5.jpg);
+  background-image: url(/images/background/bg1-home5.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   margin-top: -104px;
@@ -10907,7 +10907,7 @@ svg {
   background-color: rgba(82, 197, 182, 0.1);
 }
 .finance-contact {
-  background-image: url(images/background/overlay-home5.png);
+  background-image: url(/images/background/overlay-home5.png);
   background-position: bottom left;
   background-repeat: no-repeat;
 }
@@ -10963,20 +10963,20 @@ svg {
   margin-right: 20px;
 }
 .cta {
-  background-image: url(images/background/bg1-faq.jpg);
+  background-image: url(/images/background/bg1-faq.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .pricing-table-section {
-  background-image: url(images/background/bg2-faq.jpg);
+  background-image: url(/images/background/bg2-faq.jpg);
   background-position: top center;
   background-repeat: no-repeat;
 }
 /* Coming Soon */
 .coming-soon {
   height: 100vh;
-  background-image: url(images/background/coming-soon.jpg);
+  background-image: url(/images/background/coming-soon.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11006,7 +11006,7 @@ svg {
   margin-bottom: 33px;
 }
 .page-header-portfolio {
-  background-image: url(images/background/pheader-project.jpg);
+  background-image: url(/images/background/pheader-project.jpg);
 }
 .portfolio-detail {
   padding: 50px;
@@ -11024,7 +11024,7 @@ svg {
   padding: 15px;
 }
 .service-quote {
-  background-image: url(images/background/bg1-service-detail.jpg);
+  background-image: url(/images/background/bg1-service-detail.jpg);
   border-radius: 5px;
   padding: 50px 10px 50px 10px;
 }
@@ -11067,7 +11067,7 @@ svg {
   margin-bottom: 0;
 }
 .service-top-detail2 {
-  background-image: url(images/background/bg1-service-detail2.jpg);
+  background-image: url(/images/background/bg1-service-detail2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11088,7 +11088,7 @@ svg {
   font-size: 48px;
 }
 .service-benefit-detail2 {
-  background-image: url(images/background/bg2-service-detail2.jpg);
+  background-image: url(/images/background/bg2-service-detail2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11143,7 +11143,7 @@ svg {
 }
 .service-top-detail3 {
   padding: 70px 0 70px 100px;
-  background-image: url(images/background/bg1-service-detail3.jpg);
+  background-image: url(/images/background/bg1-service-detail3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

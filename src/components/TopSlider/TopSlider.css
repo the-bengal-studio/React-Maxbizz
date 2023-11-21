@@ -76,5 +76,17 @@ body {
   max-width: 200px;
   padding: 5px;
   border-radius: 15px;
-  /* margin: 50px 0 40px 40px; */
+}
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .text-overlay {
+    left: 50%; /* Center horizontally */
+    max-width: 40%; /* Adjust maximum width */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .text-top {
+    max-width: 100%; /* Allow full width */
+    margin-top: 10px; /* Add some space between text-overlay and text-top */
+  }
 }

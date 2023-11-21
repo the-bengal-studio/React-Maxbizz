@@ -2,6 +2,7 @@ import React from "react";
 import TopSlider from "../../components/TopSlider/TopSlider";
 import TopCarousel from "../../components/TopCarousel/TopCarousel";
 import TeamCarousel from "../../components/TeamCarousel/TeamCarousel";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -411,30 +412,30 @@ const Home = () => {
       </section>
 
       <section>
-        <div class="container">
-          <div class="space-60 d-none d-md-block"></div>
-          <div class="space-60"></div>
-          <div class="row">
-            <div class="col-xl-4 col-lg-8 offset-lg-2 offset-xl-0 col-md-12 mb-5 mb-xl-0 text-center text-xl-left">
-              <div class="ot-heading">
-                <span class="is_highlight">our priorities</span>
-                <h3 class="main-head">
+        <div className="container">
+          <div className="space-60 d-none d-md-block"></div>
+          <div className="space-60"></div>
+          <div className="row">
+            <div className="col-xl-4 col-lg-8 offset-lg-2 offset-xl-0 col-md-12 mb-5 mb-xl-0 text-center text-xl-left">
+              <div className="ot-heading">
+                <span className="is_highlight">our priorities</span>
+                <h3 className="main-head">
                   We Champion the Bold to Achieve the Extraordinary
                 </h3>
               </div>
-              <div class="space-30"></div>
-              <div class="space-5"></div>
-              <div class="ot-button">
-                <a href="#" class="octf-btn octf-btn-main">
+              <div className="space-30"></div>
+              <div className="space-5"></div>
+              <div className="ot-button">
+                <a href="#" className="octf-btn octf-btn-main">
                   all industries
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-md-6 mb-5 mb-md-0">
-              <div class="space-40 d-none d-xl-block"></div>
-              <div class="icon-left">
-                <div class="icon-box icon-box-2 consulting-icon-box-2">
-                  <div class="icon-main">
+            <div className="col-xl-4 col-md-6 mb-5 mb-md-0">
+              <div className="space-40 d-none d-xl-block"></div>
+              <div className="icon-left">
+                <div className="icon-box icon-box-2 consulting-icon-box-2">
+                  <div className="icon-main">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512"
@@ -455,8 +456,8 @@ const Home = () => {
                       </g>
                     </svg>
                   </div>
-                  <div class="content-box">
-                    <h5 class="title-box pt-0">
+                  <div className="content-box">
+                    <h5 className="title-box pt-0">
                       <a href="#">Financial Services</a>
                     </h5>
                     <p>
@@ -465,9 +466,9 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="space-40"></div>
-                <div class="icon-box icon-box-2 consulting-icon-box-2">
-                  <div class="icon-main">
+                <div className="space-40"></div>
+                <div className="icon-box icon-box-2 consulting-icon-box-2">
+                  <div className="icon-main">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -488,8 +489,8 @@ const Home = () => {
                       </g>
                     </svg>
                   </div>
-                  <div class="content-box">
-                    <h5 class="title-box pt-0">
+                  <div className="content-box">
+                    <h5 className="title-box pt-0">
                       <a href="#">Government Services</a>
                     </h5>
                     <p>
@@ -498,9 +499,9 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="space-40"></div>
-                <div class="icon-box icon-box-2 consulting-icon-box-2">
-                  <div class="icon-main">
+                <div className="space-40"></div>
+                <div className="icon-box icon-box-2 consulting-icon-box-2">
+                  <div className="icon-main">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512.01 512.01"
@@ -517,8 +518,8 @@ const Home = () => {
                       </g>
                     </svg>
                   </div>
-                  <div class="content-box">
-                    <h5 class="title-box pt-0">
+                  <div className="content-box">
+                    <h5 className="title-box pt-0">
                       <a href="#">Consumer Products</a>
                     </h5>
                     <p>
@@ -529,11 +530,11 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-md-6 mb-5 mb-md-0">
-              <div class="icon-left">
-                <div class="space-40 d-none d-xl-block"></div>
-                <div class="icon-box icon-box-2 consulting-icon-box-2">
-                  <div class="icon-main">
+            <div className="col-xl-4 col-md-6 mb-5 mb-md-0">
+              <div className="icon-left">
+                <div className="space-40 d-none d-xl-block"></div>
+                <div className="icon-box icon-box-2 consulting-icon-box-2">
+                  <div className="icon-main">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512"
@@ -549,8 +550,8 @@ const Home = () => {
                       </g>
                     </svg>
                   </div>
-                  <div class="content-box">
-                    <h5 class="title-box pt-0">
+                  <div className="content-box">
+                    <h5 className="title-box pt-0">
                       <a href="#">Airlines & Transport</a>
                     </h5>
                     <p>
@@ -559,9 +560,9 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="space-40"></div>
-                <div class="icon-box icon-box-2 consulting-icon-box-2">
-                  <div class="icon-main">
+                <div className="space-40"></div>
+                <div className="icon-box icon-box-2 consulting-icon-box-2">
+                  <div className="icon-main">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 -9 512.00092 512"
@@ -578,8 +579,8 @@ const Home = () => {
                       <path d="m506.246094 418.738281-153.742188-142.207031c-1.605468-1.488281-3.773437-2.199219-5.953125-1.945312l-45.195312 5.210937c-1.582031-5-3.917969-9.667969-6.863281-13.875l-6.4375-176.585937c-.148438-4.136719-3.628907-7.382813-7.765626-7.21875-4.140624.148437-7.371093 3.628906-7.222656 7.765624l5.882813 161.445313c-15.636719-9.433594-35.507813-9.710937-51.355469-.75l-24.09375-32.464844 45.523438-200.886719c.296874-1.3125 1.445312-2.226562 2.789062-2.226562h15.765625c1.546875 0 2.800781 1.210938 2.859375 2.753906l1.707031 46.886719c.152344 4.140625 3.652344 7.359375 7.769531 7.21875 4.136719-.148437 7.371094-3.625 7.222657-7.765625l-1.710938-46.886719c-.351562-9.648437-8.191406-17.207031-17.847656-17.207031h-15.765625c-8.398438 0-15.5625 5.722656-17.414062 13.910156l-46.285157 204.25c-.484375 2.132813-.011719 4.371094 1.289063 6.125l26.355468 35.511719c-7.160156 7.457031-12.089843 17.070313-13.6875 27.757813l-193.675781 121.4375c-8.183593 5.128906-10.808593 15.699218-5.980469 24.058593l7.882813 13.65625c3.273437 5.664063 9.167969 8.941407 15.40625 8.941407 1.773437 0 3.574219-.265626 5.351563-.816407l45.554687-14.128906c3.957031-1.226563 6.171875-5.429687 4.941406-9.382813-1.226562-3.957031-5.425781-6.167968-9.382812-4.941406l-45.558594 14.128906c-1.28125.398438-2.652344-.136718-3.324219-1.300781l-7.882812-13.65625c-.773438-1.335937-.351563-3.027343.957031-3.851562l186.105469-116.6875c3.703125 18.878906 17.835937 34.054687 36.125 39.28125l-15.246094 35.195312-123.925781 38.4375c-3.957031 1.226563-6.167969 5.425781-4.941407 9.382813 1.226563 3.957031 5.429688 6.167968 9.386719 4.941406l127.21875-39.457031c2.085938-.648438 3.789063-2.175781 4.660157-4.183594l18.359374-42.386719c1.921876-.054687 3.816407-.214844 5.679688-.476562l218.09375 115.535156c2.683594 1.421875 5.558594 2.101562 8.390625 2.101562 6.167969 0 12.125-3.21875 15.433594-8.949218l7.886719-13.65625c4.195312-7.273438 2.824218-16.335938-3.339844-22.039063zm-253.636719-87.476562c-20.011719 0-36.109375-16.453125-36.109375-36.109375 0-19.941406 16.238281-36.105469 36.109375-36.105469 19.875 0 36.105469 16.195313 36.105469 36.105469 0 19.675781-15.972656 36.109375-36.105469 36.109375zm243.984375 102.015625-7.882812 13.65625c-.769532 1.335937-2.441407 1.820312-3.8125 1.09375l-205.929688-109.089844c15.308594-9.246094 24.945312-26.113281 24.742188-44.3125l41.136718-4.746094 151.214844 139.871094c.984375.914062 1.207031 2.363281.53125 3.527344zm0 0"></path>
                     </svg>
                   </div>
-                  <div class="content-box">
-                    <h5 class="title-box pt-0">
+                  <div className="content-box">
+                    <h5 className="title-box pt-0">
                       <a href="#">Natural Resources</a>
                     </h5>
                     <p>
@@ -588,9 +589,9 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="space-40"></div>
-                <div class="icon-box icon-box-2 consulting-icon-box-2">
-                  <div class="icon-main">
+                <div className="space-40"></div>
+                <div className="icon-box icon-box-2 consulting-icon-box-2">
+                  <div className="icon-main">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -605,8 +606,8 @@ const Home = () => {
                       </g>
                     </svg>
                   </div>
-                  <div class="content-box">
-                    <h5 class="title-box pt-0">
+                  <div className="content-box">
+                    <h5 className="title-box pt-0">
                       <a href="#">Private Equity</a>
                     </h5>
                     <p>
@@ -618,19 +619,487 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="space-60"></div>
-          <div class="space-60 d-none d-md-block"></div>
+          <div className="space-60"></div>
+          <div className="space-60 d-none d-md-block"></div>
         </div>
       </section>
-      <section class="consulting-team">
+      <section className="consulting-team">
+        <div className="container">
+          <div className="space-60 d-none d-md-block"></div>
+          <div className="space-60"></div>
+          <div className="row">
+            <div className="col-lg-8 offset-lg-2 text-center">
+              <div className="ot-heading">
+                <span className="is_highlight">our team</span>
+                <h3 className="main-head">Team Leaders of Company</h3>
+              </div>
+              <div className="space-20"></div>
+              <p className="px-xl-5">
+                We help you see the world differently, discover opportunities
+                you may never have imagined and achieve results that bridge what
+                is with what can be.
+              </p>
+              <div className="space-30"></div>
+            </div>
+          </div>
+        </div>
+        <div className="container-fluid">
+          <TeamCarousel></TeamCarousel>
+        </div>
+      </section>
+      <section className="consulting-video">
+        <div className="container">
+          <div className="space-90"></div>
+          <div className="row align-items-center">
+            <div className="col-xl-9 col-lg-8 mb-5 mb-lg-0">
+              <div className="row">
+                <div className="col-lg-8">
+                  <h2>Doing the Right Thing, at the Right Time</h2>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-4">
+              <div className="ot-video-button ot-video-light flex-middle justify-content-start">
+                <a className="btn-play" href="https://vimeo.com/87959439">
+                  <i className="ot-flaticon-play"></i>
+                  <span className="circle-1"></span>
+                </a>
+                <span className="font-second text-white">watch video</span>
+              </div>
+            </div>
+          </div>
+          <div className="consulting-video-divider"></div>
+          <div className="row">
+            <div className="col-lg-3 col-6 mb-5 mb-lg-0">
+              <div className="number-left">
+                <div className="ot-counter icounter">
+                  <div className="c-number">
+                    <span
+                      className="num text-white"
+                      data-to="350"
+                      data-time="2000"
+                    >
+                      0
+                    </span>
+                  </div>
+                  <h6 className="text-white">Trusted Clients</h6>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-6 mb-5 mb-lg-0">
+              <div className="number-left">
+                <div className="ot-counter icounter">
+                  <div className="c-number">
+                    <span
+                      className="num text-white"
+                      data-to="215"
+                      data-time="2000"
+                    >
+                      0
+                    </span>
+                  </div>
+                  <h6 className="text-white">Finished Projects</h6>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-6">
+              <div className="number-left">
+                <div className="ot-counter icounter">
+                  <div className="c-number">
+                    <span
+                      className="num text-white"
+                      data-to="15"
+                      data-time="2000"
+                    >
+                      0
+                    </span>
+                  </div>
+                  <h6 className="text-white">Years of Experience</h6>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-6">
+              <div className="number-left">
+                <div className="ot-counter icounter">
+                  <div className="c-number">
+                    <span
+                      className="num text-white"
+                      data-to="36"
+                      data-time="2000"
+                    >
+                      0
+                    </span>
+                  </div>
+                  <h6 className="text-white">Visited Conferences</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="space-90"></div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <div className="space-60"></div>
+          <div className="space-60 d-none d-md-block"></div>
+          <div className="ot-heading text-center">
+            <span className="is_highlight">portfolio</span>
+            <h3 className="main-head">Our Latest Case Studies</h3>
+          </div>
+          <div className="space-50"></div>
+          <div className="project-filter-wrapper project-consulting">
+            <ul className="project_filters ">
+              <li>
+                <a href="#" data-filter="*" className="selected">
+                  All<span className="filter-count">6</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-filter=".category-15" className>
+                  business<span className="filter-count">2</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-filter=".category-16" className>
+                  finance<span className="filter-count">4</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-filter=".category-17" className>
+                  marketing<span className="filter-count">3</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-filter=".category-19" className>
+                  startup<span className="filter-count">2</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-filter=".category-20" className>
+                  strategy<span className="filter-count">1</span>
+                </a>
+              </li>
+            </ul>
+            <div className="projects-grid pf_3_cols style-2 img-scale no-icon">
+              <div className="grid-sizer"></div>
+              <div className="project-item category-15">
+                <div className="projects-box">
+                  <div
+                    className="projects-thumbnail"
+                    data-src="images/projects/project1.jpg"
+                  >
+                    <a href="portfolio-details-1.html">
+                      <img src="/images/projects/project1.jpg" />
+                    </a>
+                    <span className="overlay">
+                      <i className="ot-flaticon-signs"></i>
+                    </span>
+                  </div>
+                  <div className="portfolio-info">
+                    <a href="portfolio-details-1.html" className="overlay"></a>
+                    <div className="portfolio-info-inner">
+                      <a href="portfolio-details-1.html" className="plus">
+                        <i className="ot-flaticon-signs"></i>
+                      </a>
+                      <h5>
+                        <a
+                          className="title-link"
+                          href="portfolio-details-1.html"
+                        >
+                          Business Consultation
+                        </a>
+                      </h5>
+                      <p className="portfolio-cates">
+                        <a href="#">business</a>
+                        <span>/ </span>
+                        <a href="#">finance</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="project-item category-17">
+                <div className="projects-box">
+                  <div
+                    className="projects-thumbnail"
+                    data-src="images/projects/project-2.jpg"
+                  >
+                    <a href="portfolio-details-1.html">
+                      <img src="/images/projects/project-2.jpg" />
+                    </a>
+                    <span className="overlay">
+                      <i className="ot-flaticon-signs"></i>
+                    </span>
+                  </div>
+                  <div className="portfolio-info">
+                    <a href="portfolio-details-1.html" className="overlay"></a>
+                    <div className="portfolio-info-inner">
+                      <a href="portfolio-details-1.html" className="plus">
+                        <i className="ot-flaticon-signs"></i>
+                      </a>
+                      <h5>
+                        <a
+                          className="title-link"
+                          href="portfolio-details-1.html"
+                        >
+                          Finance Strategy
+                        </a>
+                      </h5>
+                      <p className="portfolio-cates">
+                        <a href="#">business</a>
+                        <span>/ </span>
+                        <a href="#">finance</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="project-item category-16">
+                <div className="projects-box">
+                  <div
+                    className="projects-thumbnail"
+                    data-src="images/projects/project-3.jpg"
+                  >
+                    <a href="portfolio-details-1.html">
+                      <img src="/images/projects/project-3.jpg" />
+                    </a>
+                    <span className="overlay">
+                      <i className="ot-flaticon-signs"></i>
+                    </span>
+                  </div>
+                  <div className="portfolio-info">
+                    <a href="portfolio-details-1.html" className="overlay"></a>
+                    <div className="portfolio-info-inner">
+                      <a href="portfolio-details-1.html" className="plus">
+                        <i className="ot-flaticon-signs"></i>
+                      </a>
+                      <h5>
+                        <a
+                          className="title-link"
+                          href="portfolio-details-1.html"
+                        >
+                          Digital Marketing
+                        </a>
+                      </h5>
+                      <p className="portfolio-cates">
+                        <a href="#">business</a>
+                        <span>/ </span>
+                        <a href="#">finance</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="project-item category-20">
+                <div className="projects-box">
+                  <div
+                    className="projects-thumbnail"
+                    data-src="images/projects/project-4.jpg"
+                  >
+                    <a href="portfolio-details-1.html">
+                      <img src="/images/projects/project-4.jpg" />
+                    </a>
+                    <span className="overlay">
+                      <i className="ot-flaticon-signs"></i>
+                    </span>
+                  </div>
+                  <div className="portfolio-info">
+                    <a href="portfolio-details-1.html" className="overlay"></a>
+                    <div className="portfolio-info-inner">
+                      <a href="portfolio-details-1.html" className="plus">
+                        <i className="ot-flaticon-signs"></i>
+                      </a>
+                      <h5>
+                        <a
+                          className="title-link"
+                          href="portfolio-details-1.html"
+                        >
+                          Enterprise Loan
+                        </a>
+                      </h5>
+                      <p className="portfolio-cates">
+                        <a href="#">business</a>
+                        <span>/ </span>
+                        <a href="#">finance</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="project-item category-19">
+                <div className="projects-box">
+                  <div
+                    className="projects-thumbnail"
+                    data-src="images/projects/project-6.jpg"
+                  >
+                    <a href="portfolio-details-1.html">
+                      <img src="/images/projects/project-6.jpg" />
+                    </a>
+                    <span className="overlay">
+                      <i className="ot-flaticon-signs"></i>
+                    </span>
+                  </div>
+                  <div className="portfolio-info">
+                    <a href="portfolio-details-1.html" className="overlay"></a>
+                    <div className="portfolio-info-inner">
+                      <a href="portfolio-details-1.html" className="plus">
+                        <i className="ot-flaticon-signs"></i>
+                      </a>
+                      <h5>
+                        <a
+                          className="title-link"
+                          href="portfolio-details-1.html"
+                        >
+                          Data Analytics
+                        </a>
+                      </h5>
+                      <p className="portfolio-cates">
+                        <a href="#">business</a>
+                        <span>/ </span>
+                        <a href="#">finance</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="project-item category-19">
+                <div className="projects-box">
+                  <div
+                    className="projects-thumbnail"
+                    data-src="images/projects/project-5.jpg"
+                  >
+                    <a href="portfolio-details-1.html">
+                      <img src="/images/projects/project-5.jpg" />
+                    </a>
+                    <span className="overlay">
+                      <i className="ot-flaticon-signs"></i>
+                    </span>
+                  </div>
+                  <div className="portfolio-info">
+                    <a href="portfolio-details-1.html" className="overlay"></a>
+                    <div className="portfolio-info-inner">
+                      <a href="portfolio-details-1.html" className="plus">
+                        <i className="ot-flaticon-signs"></i>
+                      </a>
+                      <h5>
+                        <a
+                          className="title-link"
+                          href="portfolio-details-1.html"
+                        >
+                          Fund Management
+                        </a>
+                      </h5>
+                      <p className="portfolio-cates">
+                        <a href="#">business</a>
+                        <span>/ </span>
+                        <a href="#">finance</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="space-50"></div>
+          <div className="ot-button text-center">
+            <a href="#" className="octf-btn octf-btn-main">
+              Explore More
+            </a>
+          </div>
+          <div className="space-60"></div>
+          <div className="space-60 d-none d-md-block"></div>
+        </div>
+      </section>
+
+      <section class="consulting-testi">
+        <div class="container">
+          <div class="space-60 d-none d-md-block"></div>
+          <div class="space-60"></div>
+          <div class="ot-heading text-center">
+            <span class="is_highlight">testimonials</span>
+            <h3 class="main-head">What People Say About Us</h3>
+          </div>
+          <div class="space-50"></div>
+          <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+              <div
+                class="ot-testimonials ot-testimonials-carousel-2"
+                data-loop="true"
+                data-time="7000"
+                data-auto="true"
+                data-arrows="true"
+                data-dots="false"
+              >
+                <div class="owl-carousel owl-theme">
+                  <div class="testi-item">
+                    <div class="tphoto">
+                      <img src="/images/avatar-1.png" alt="Oliver Simson" />
+                    </div>
+                    <div class="ttext">
+                      “We know a diverse workforce and an inclusive culture
+                      matters to our clients. Through philanthropy and employee
+                      volunteerism, we support the diverse communities where our
+                      employees live.”
+                    </div>
+                    <div class="t-head">
+                      <div class="tinfo">
+                        <h6>Oliver Simson</h6>
+                        <span>client of company</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testi-item">
+                    <div class="tphoto">
+                      <img src="/images/testi2.png" alt="Mary Grey" />
+                    </div>
+                    <div class="ttext">
+                      “We know a diverse workforce and an inclusive culture
+                      matters to our clients. Through philanthropy and employee
+                      volunteerism, we support the diverse communities where our
+                      employees live.”
+                    </div>
+                    <div class="t-head">
+                      <div class="tinfo">
+                        <h6>Mary Grey</h6>
+                        <span>Manager</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testi-item">
+                    <div class="tphoto">
+                      <img src="/images/testi3.png" alt="Samanta Fox" />
+                    </div>
+                    <div class="ttext">
+                      “We know a diverse workforce and an inclusive culture
+                      matters to our clients. Through philanthropy and employee
+                      volunteerism, we support the diverse communities where our
+                      employees live.”
+                    </div>
+                    <div class="t-head">
+                      <div class="tinfo">
+                        <h6>Samanta Fox</h6>
+                        <span>Designer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space-60 d-none d-md-block"></div>
+          <div class="space-60"></div>
+        </div>
+      </section>
+
+      <section>
         <div class="container">
           <div class="space-60 d-none d-md-block"></div>
           <div class="space-60"></div>
           <div class="row">
             <div class="col-lg-8 offset-lg-2 text-center">
               <div class="ot-heading">
-                <span class="is_highlight">our team</span>
-                <h3 class="main-head">Team Leaders of Company</h3>
+                <span class="is_highlight">our blog</span>
+                <h3 class="main-head">Read Our Latest Insights</h3>
               </div>
               <div class="space-20"></div>
               <p class="px-xl-5">
@@ -638,14 +1107,307 @@ const Home = () => {
                 you may never have imagined and achieve results that bridge what
                 is with what can be.
               </p>
+              <div class="space-20"></div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+              <article class="post-box post-box-main">
+                <div class="post-inner">
+                  <div class="entry-media">
+                    <div class="post-cat">
+                      <span class="posted-in">
+                        <a href="#">business</a>
+                      </span>
+                    </div>
+                    <a href="post.html">
+                      <img src="/images/blog/blog-1.jpg" alt />
+                    </a>
+                  </div>
+                  <div class="inner-post">
+                    <div class="entry-header">
+                      <h5 class="entry-title mb-0">
+                        <a href="post.html">
+                          Contactless Payments’ Time Has Come
+                        </a>
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="entry-meta">
+                    <span class="posted-on">
+                      <a href="#">November 21, 2023</a>
+                    </span>
+                    <span class="comment-num">
+                      / <a href="#">3 Comments</a>
+                    </span>
+                    <a class="btn-details" href="post.html">
+                      <i class="ot-flaticon-trajectory"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <article class="post-box post-box-main">
+                <div class="post-inner">
+                  <div class="entry-media">
+                    <div class="post-cat">
+                      <span class="posted-in">
+                        <a href="#">business</a>
+                        <a href="#">marketing</a>
+                      </span>
+                    </div>
+                    <a href="post.html">
+                      <img src="/images/blog/gallery-1.jpg" alt />
+                    </a>
+                  </div>
+                  <div class="inner-post">
+                    <div class="entry-header">
+                      <h5 class="entry-title mb-0">
+                        <a href="post.html">
+                          The Future of Retail: Asia’s Ecosystems
+                        </a>
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="entry-meta">
+                    <span class="posted-on">
+                      <a href="#">November 21, 2023</a>
+                    </span>
+                    <span class="comment-num">
+                      / <a href="#">3 Comments</a>
+                    </span>
+                    <a class="btn-details" href="post.html">
+                      <i class="ot-flaticon-trajectory"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <article class="post-box post-box-main">
+                <div class="post-inner">
+                  <div class="entry-media">
+                    <div class="post-cat">
+                      <span class="posted-in">
+                        <a href="#">business</a>
+                      </span>
+                    </div>
+                    <a href="post.html">
+                      <img src="/images/blog/gallery-2.jpg" alt />
+                    </a>
+                  </div>
+                  <div class="inner-post">
+                    <div class="entry-header">
+                      <h5 class="entry-title mb-0">
+                        <a href="post.html">
+                          Digital Transformation Roadmap: Enablers
+                        </a>
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="entry-meta">
+                    <span class="posted-on">
+                      <a href="#">November 21, 2023</a>
+                    </span>
+                    <span class="comment-num">
+                      / <a href="#">3 Comments</a>
+                    </span>
+                    <a class="btn-details" href="post.html">
+                      <i class="ot-flaticon-trajectory"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="ot-button text-center">
+                <a href="blog.html" class="octf-btn octf-btn-main">
+                  view all
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="space-60 d-none d-md-block"></div>
+          <div class="space-60"></div>
+        </div>
+      </section>
+      <footer id="site-footer" class="site-footer footer-v1">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-5 mb-xl-0">
+              <div class="logo-ft">
+                <Link to="/">
+                  <img src="/images/02_White.svg" alt />
+                </Link>
+              </div>
               <div class="space-30"></div>
+              <div class="space-2"></div>
+              <p>
+                We make this belief a reality by putting clients first, leading
+                with exceptional ideas, doing the right thing, and giving back.
+              </p>
+              <div class="space-5"></div>
+              <div class="space-3"></div>
+              <div class="ft-list-icon">
+                <a class="twitter" href="twitter.html">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a class="facebook" href="facebook.html">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="linkedin" href="linkedin.html">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-5 mb-xl-0">
+              <h6 class="widget-footer-title">About us</h6>
+              <div class="row">
+                <div class="col-6">
+                  <ul class="ft-list-link">
+                    <li>
+                      <a href="#">Contact us</a>
+                    </li>
+                    <li>
+                      <a href="#">Connect</a>
+                    </li>
+                    <li>
+                      <a href="#">Subscribe</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms of use</a>
+                    </li>
+                    <li>
+                      <a href="#">Sitemap</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="ft-list-link">
+                    <li>
+                      <a href="#">Careers</a>
+                    </li>
+                    <li>
+                      <a href="#">Newsroom</a>
+                    </li>
+                    <li>
+                      <a href="#">Case Studies</a>
+                    </li>
+                    <li>
+                      <a href="#">Disclosures</a>
+                    </li>
+                    <li>
+                      <a href="#">Services</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-5 mb-lg-0">
+              <h6 class="widget-footer-title">Contacts</h6>
+              <div class="footer-contact">
+                <div class="footer-contact-icon phone-info-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 512 512"
+                    style={{ enableBackground: "new 0 0 512 512" }}
+                    xmlSpace="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path d="M256,0C150.125,0,64,86.135,64,192c0,141.646,177.146,310,184.688,317.104C250.75,511.031,253.375,512,256,512    s5.25-0.969,7.313-2.896C270.854,502,448,333.646,448,192C448,86.135,361.875,0,256,0z M256,298.667    c-58.813,0-106.667-47.854-106.667-106.667S197.188,85.333,256,85.333S362.667,133.188,362.667,192S314.813,298.667,256,298.667z"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="footer-contact-desc phone-info-desc">
+                  <h6>Visit Us Daily</h6>
+                  <p>411 University St, Seattle</p>
+                </div>
+              </div>
+              <div class="footer-contact">
+                <div class="footer-contact-icon phone-info-icon">
+                  <a href="tel:1-800-456-478-23">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 384 384"
+                      style={{ enableBackground: "new 0 0 384 384" }}
+                      xmlSpace="preserve"
+                    >
+                      <g>
+                        <g>
+                          <path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594    c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448    c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813    C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div class="footer-contact-desc phone-info-desc">
+                  <h6>
+                    <a href="tel:+1-800-456-478-23">Have Any Questions?</a>
+                  </h6>
+                  <p>+1-800-456-478-23</p>
+                </div>
+              </div>
+              <div class="footer-contact">
+                <div class="footer-contact-icon phone-info-icon">
+                  <a href="mailto:Betazen Infotech@mail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="m8.75 17.612v4.638c0 .324.208.611.516.713.077.025.156.037.234.037.234 0 .46-.11.604-.306l2.713-3.692z"></path>
+                      <path d="m23.685.139c-.23-.163-.532-.185-.782-.054l-22.5 11.75c-.266.139-.423.423-.401.722.023.3.222.556.505.653l6.255 2.138 13.321-11.39-10.308 12.419 10.483 3.583c.078.026.16.04.242.04.136 0 .271-.037.39-.109.19-.116.319-.311.352-.53l2.75-18.5c.041-.28-.077-.558-.307-.722z"></path>
+                    </svg>
+                  </a>
+                </div>
+                <div class="footer-contact-desc phone-info-desc">
+                  <h6>
+                    <a href="mailto:Betazen Infotech@mail.com">Mail Us</a>
+                  </h6>
+                  <p>Betazen Infotech@mail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+              <h6 class="widget-footer-title">Subscribe</h6>
+              <form class="ft-sub mc4wp-form" method="post">
+                <div class="mc4wp-form-fields">
+                  <div class="subscribe-inner-form">
+                    <input
+                      type="email"
+                      name="EMAIL"
+                      placeholder="Your Email *"
+                      required
+                    />
+                    <button type="submit" class="subscribe-btn-icon">
+                      <i class="ot-flaticon-trajectory"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div class="space-20"></div>
+              <p>Subscribe to our newsletter. Be always in trend!</p>
+            </div>
+          </div>
+          <div class="space-100"></div>
+          <div class="space-10"></div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p class="copyright-text">
+                Copyright © 2023 Betazen Infotech by The Bengal Studio. All
+                Rights Reserved.
+              </p>
             </div>
           </div>
         </div>
-        <div class="container-fluid">
-          <TeamCarousel></TeamCarousel>
-        </div>
-      </section>
+      </footer>
     </div>
   );
 };
