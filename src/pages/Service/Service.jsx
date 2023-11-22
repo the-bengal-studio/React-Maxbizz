@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-import "owl.carousel";
 import ServiceCarousel from "../../components/ServiceCarousel/ServiceCarousel";
+import ServiceClients from "../../components/ServiceClients/ServiceClients";
 
 const Service = () => {
   return (
@@ -181,6 +179,7 @@ const Service = () => {
         <div class="space-60 d-none d-md-block"></div>
         <div class="space-60"></div>=
       </section>
+      <ServiceClients></ServiceClients>
     </div>
   );
 };

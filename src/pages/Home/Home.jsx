@@ -1012,7 +1012,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section class="consulting-testi">
+      {/* <section class="consulting-testi">
         <div class="container">
           <div class="space-60 d-none d-md-block"></div>
           <div class="space-60"></div>
@@ -1020,12 +1020,12 @@ const Home = () => {
             <span class="is_highlight">testimonials</span>
             <h3 class="main-head">What People Say About Us</h3>
           </div>
-          <div class="space-50"></div>
-          <TestimonialCarousel></TestimonialCarousel>
-          <div class="space-60 d-none d-md-block"></div>
+          <div class="space-50"></div> */}
+      <TestimonialCarousel></TestimonialCarousel>
+      {/* <div class="space-60 d-none d-md-block"></div>
           <div class="space-60"></div>
         </div>
-      </section>
+      </section> */}
 
       <section>
         <div class="container">

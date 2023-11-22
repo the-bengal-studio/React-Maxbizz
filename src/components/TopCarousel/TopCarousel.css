@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,10 +23,7 @@ body {
 }
 .keen-slider-top {
   background: #212529;
-}
-/* @media screen and (max-width: 768px) {
-  .number-slide-top {
-    display: grid;
-    grid-template-columns: 2;
-  }
 } */
+.bg-color-clients {
+  background-color: #262832;
+}
