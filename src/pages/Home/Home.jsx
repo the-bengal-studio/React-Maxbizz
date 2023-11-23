@@ -472,7 +472,7 @@ const Home = () => {
                   <div className="icon-main">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
                       viewBox="0 0 511.999 511.999"
                     >
                       <g>
@@ -595,7 +595,7 @@ const Home = () => {
                   <div className="icon-main">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
                       viewBox="0 0 511.989 511.989"
                     >
                       <g>
@@ -1012,20 +1012,9 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <section class="consulting-testi">
-        <div class="container">
-          <div class="space-60 d-none d-md-block"></div>
-          <div class="space-60"></div>
-          <div class="ot-heading text-center">
-            <span class="is_highlight">testimonials</span>
-            <h3 class="main-head">What People Say About Us</h3>
-          </div>
-          <div class="space-50"></div> */}
-      <TestimonialCarousel></TestimonialCarousel>
-      {/* <div class="space-60 d-none d-md-block"></div>
-          <div class="space-60"></div>
-        </div>
-      </section> */}
+      <section>
+        <TestimonialCarousel></TestimonialCarousel>
+      </section>
 
       <section>
         <div class="container">

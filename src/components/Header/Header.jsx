@@ -2,27 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  // desktop menu
-  // const [isPanelOpen, setPanelOpen] = useState(false);
-
-  // useEffect(() => {
-  //   // Add or remove the 'side-panel-active' class on the body based on the state
-  //   if (isPanelOpen) {
-  //     document.body.classList.add("side-panel-active");
-  //   } else {
-  //     document.body.classList.remove("side-panel-active");
-  //   }
-
-  //   // Cleanup the class when the component is unmounted
-  //   return () => {
-  //     document.body.classList.remove("side-panel-active");
-  //   };
-  // }, [isPanelOpen]);
-
-  // const togglePanel = () => {
-  //   setPanelOpen(!isPanelOpen);
-  // };
-
   //mobile menu
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -40,38 +19,42 @@ const Header = () => {
     };
   }, [isMobileMenuOpen]);
 
-  const toggleMobileMenu = () => {
+  const toggleMobileMenu = (e) => {
+    e.preventDefault();
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
     <div>
-      <header id="site-header" class="site-header header-static sticky-header">
-        <div class="header-desktop">
+      <header
+        id="site-header"
+        className="site-header header-static sticky-header"
+      >
+        <div className="header-desktop">
           {/* <!-- Main Header start --> */}
-          <div class="consulting-topbar">
-            <div class="container-fluid">
-              <div class="row align-items-center">
-                <div class="col-lg-3">
-                  <div class="topbar-list-icon">
-                    <a class="twitter" href="twitter.html">
-                      <i class="fab fa-twitter"></i>
+          <div className="consulting-topbar">
+            <div className="container-fluid">
+              <div className="row align-items-center">
+                <div className="col-lg-3">
+                  <div className="topbar-list-icon">
+                    <a className="twitter" href="twitter.html">
+                      <i className="fab fa-twitter"></i>
                     </a>
-                    <a class="facebook" href="facebook.html">
-                      <i class="fab fa-facebook-f"></i>
+                    <a className="facebook" href="facebook.html">
+                      <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a class="linkedin" href="linkedin.html">
-                      <i class="fab fa-pinterest-p"></i>
+                    <a className="linkedin" href="linkedin.html">
+                      <i className="fab fa-pinterest-p"></i>
                     </a>
-                    <a class="instagram" href="linkedin.html">
-                      <i class="fab fa-instagram"></i>
+                    <a className="instagram" href="linkedin.html">
+                      <i className="fab fa-instagram"></i>
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-9">
-                  <ul class="top-list-info justify-content-end">
+                <div className="col-lg-9">
+                  <ul className="top-list-info justify-content-end">
                     <li>
-                      <span class="top-list-icon">
+                      <span className="top-list-icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 384 384"
@@ -80,18 +63,20 @@ const Header = () => {
                           <path d="m192 64c-8.832031 0-16 7.167969-16 16v112c0 8.832031 7.167969 16 16 16h80c8.832031 0 16-7.167969 16-16s-7.167969-16-16-16h-64v-96c0-8.832031-7.167969-16-16-16zm0 0"></path>
                         </svg>
                       </span>
-                      <span class="top-list-text">Mon - Sat: 8.00 - 18.00</span>
+                      <span className="top-list-text">
+                        Mon - Sat: 8.00 - 18.00
+                      </span>
                     </li>
                     <li>
-                      <span class="top-list-icon">
+                      <span className="top-list-icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
                           id="Layer_1"
                           x="0px"
                           y="0px"
                           viewBox="0 0 512 512"
-                          xml:space="preserve"
+                          xmlSpace="preserve"
                         >
                           <g>
                             {" "}
@@ -101,21 +86,21 @@ const Header = () => {
                           </g>
                         </svg>
                       </span>
-                      <span class="top-list-text">
+                      <span className="top-list-text">
                         411 University St, Seattle
                       </span>
                     </li>
                     <li>
                       <a href="tel:1-800-456-478-23">
-                        <span class="top-list-icon">
+                        <span className="top-list-icon">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
                             id="Capa_1"
                             x="0px"
                             y="0px"
                             viewBox="0 0 384 384"
-                            xml:space="preserve"
+                            xmlSpace="preserve"
                           >
                             <g>
                               <g>
@@ -125,7 +110,7 @@ const Header = () => {
                             </g>
                           </svg>
                         </span>
-                        <span class="top-list-text">+1-800-456-478-23</span>
+                        <span className="top-list-text">+1-800-456-478-23</span>
                       </a>
                     </li>
                   </ul>
@@ -133,27 +118,28 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div class="consulting-header-main main-header">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-3">
-                  <div class="site-logo">
+          <div className="consulting-header-main main-header">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-lg-3">
+                  <div className="site-logo">
                     <Link to="/">
                       <img src="images/02_Black.svg" alt />
                     </Link>
                   </div>
                 </div>
-                <div class="col-xl-6 col-lg-9 text-center">
-                  <nav id="site-navigation" class="main-navigation">
-                    <ul class="menu">
-                      <li class="menu-item-has-children">
-                        <a href="index-2.html">Home</a>
-                        <ul class="sub-menu">
+                <div className="col-xl-6 col-lg-9 text-center">
+                  <nav id="site-navigation" className="main-navigation">
+                    <ul className="menu">
+                      <li className="menu-item-has-children">
+                        <Link to="/">Home</Link>
+
+                        <ul className="sub-menu">
                           <li>
-                            <a href="index-2.html">Home Main</a>
+                            <Link to="/">Home</Link>
                           </li>
-                          <li class="current-menu-item">
-                            <a href="index-3.html">Home Consulting</a>
+                          <li className="current-menu-item">
+                            <Link to="/">Home Consulting</Link>
                           </li>
                           <li>
                             <a href="index-4.html">Home Business</a>
@@ -166,11 +152,11 @@ const Header = () => {
                           </li>
                         </ul>
                       </li>
-                      <li class="menu-item-has-children current-menu-item">
+                      <li className="menu-item-has-children current-menu-item">
                         <a href="#">Pages</a>
-                        <ul class="sub-menu">
+                        <ul className="sub-menu">
                           <li>
-                            <a href="about-us.html">About us</a>
+                            <Link to="/aboutus">About Us</Link>
                           </li>
                           <li>
                             <Link to="/service">Our Services</Link>
@@ -187,9 +173,9 @@ const Header = () => {
                           <li>
                             <a href="single-team.html">Single team</a>
                           </li>
-                          <li class="menu-item-has-children">
+                          <li className="menu-item-has-children">
                             <a href="shop.html">Shop</a>
-                            <ul class="sub-menu">
+                            <ul className="sub-menu">
                               <li>
                                 <a href="shop.html">Product Catalog</a>
                               </li>
@@ -218,9 +204,9 @@ const Header = () => {
                           </li>
                         </ul>
                       </li>
-                      <li class="menu-item-has-children">
+                      <li className="menu-item-has-children">
                         <a href="#">Portfolio</a>
-                        <ul class="sub-menu">
+                        <ul className="sub-menu">
                           <li>
                             <a href="portfolio-grid.html">Portfolio Grid</a>
                           </li>
@@ -241,9 +227,9 @@ const Header = () => {
                           </li>
                         </ul>
                       </li>
-                      <li class="menu-item-has-children">
+                      <li className="menu-item-has-children">
                         <a href="service.html">Services</a>
-                        <ul class="sub-menu">
+                        <ul className="sub-menu">
                           <li>
                             <a href="service-detail-1.html">
                               Marketing Research
@@ -272,9 +258,9 @@ const Header = () => {
                           </li>
                         </ul>
                       </li>
-                      <li class="menu-item-has-children">
+                      <li className="menu-item-has-children">
                         <a href="blog.html">Blog</a>
-                        <ul class="sub-menu">
+                        <ul className="sub-menu">
                           <li>
                             <a href="blog.html">Blog Listing</a>
                           </li>
@@ -289,25 +275,25 @@ const Header = () => {
                     </ul>
                   </nav>
                 </div>
-                <div class="col-xl-3 align-self-center text-right">
-                  <div class="octf-btn-cta justify-content-end align-items-center">
-                    {/* <div class="octf-cart octf-cta-header">
+                <div className="col-xl-3 align-self-center text-right">
+                  <div className="octf-btn-cta justify-content-end align-items-center">
+                    {/* <div className="octf-cart octf-cta-header">
                       <a
-                        class="cart-contents"
+                        className="cart-contents"
                         href="cart-page.html"
                         title="View your shopping cart"
                       >
-                        <i class="ot-flaticon-business"></i>
-                        <span class="count">2</span>
+                        <i className="ot-flaticon-business"></i>
+                        <span className="count">2</span>
                       </a>
 
-                      <div class="site-header-cart">
-                        <div class="widget woocommerce widget_shopping_cart">
-                          <div class="widget_shopping_cart_content">
-                            <ul class="woocommerce-mini-cart cart_list product_list_widget ">
-                              <li class="woocommerce-mini-cart-item mini_cart_item">
+                      <div className="site-header-cart">
+                        <div className="widget woocommerce widget_shopping_cart">
+                          <div className="widget_shopping_cart_content">
+                            <ul className="woocommerce-mini-cart cart_list product_list_widget ">
+                              <li className="woocommerce-mini-cart-item mini_cart_item">
                                 <a
-                                  class="remove remove_from_cart_button"
+                                  className="remove remove_from_cart_button"
                                   href="#"
                                 >
                                   ×
@@ -315,23 +301,23 @@ const Header = () => {
                                 <a href="single-product.html">
                                   <img
                                     src="images/product/product-3.png"
-                                    class
+                                    className
                                     alt
                                   />
                                   Introduction to Business
                                 </a>
-                                <span class="quantity">
+                                <span className="quantity">
                                   1 ×{" "}
-                                  <span class="amount">
+                                  <span className="amount">
                                     <bdi>
                                       <span>$</span>39.99
                                     </bdi>
                                   </span>
                                 </span>
                               </li>
-                              <li class="woocommerce-mini-cart-item mini_cart_item">
+                              <li className="woocommerce-mini-cart-item mini_cart_item">
                                 <a
-                                  class="remove remove_from_cart_button"
+                                  className="remove remove_from_cart_button"
                                   href="#"
                                 >
                                   ×
@@ -339,14 +325,14 @@ const Header = () => {
                                 <a href="single-product.html">
                                   <img
                                     src="images/product/product-9.png"
-                                    class
+                                    className
                                     alt
                                   />
                                   Introduction to Marketing
                                 </a>
-                                <span class="quantity">
+                                <span className="quantity">
                                   1 ×{" "}
-                                  <span class="amount">
+                                  <span className="amount">
                                     <bdi>
                                       <span>$</span>49.99
                                     </bdi>
@@ -355,24 +341,24 @@ const Header = () => {
                               </li>
                             </ul>
 
-                            <p class="woocommerce-mini-cart__total total">
+                            <p className="woocommerce-mini-cart__total total">
                               <strong>Subtotal:</strong>
-                              <span class="amount">
+                              <span className="amount">
                                 <bdi>
                                   <span>$</span>89.98
                                 </bdi>
                               </span>
                             </p>
-                            <p class="woocommerce-mini-cart__buttons buttons">
+                            <p className="woocommerce-mini-cart__buttons buttons">
                               <a
                                 href="cart-page.html"
-                                class="button wc-forward"
+                                className="button wc-forward"
                               >
                                 View cart
                               </a>
                               <a
                                 href="checkout-page.html"
-                                class="button checkout wc-forward"
+                                className="button checkout wc-forward"
                               >
                                 Checkout
                               </a>
@@ -382,32 +368,38 @@ const Header = () => {
                       </div>
                     </div> */}
 
-                    <div class="octf-search octf-cta-header">
-                      <div class="toggle_search octf-cta-icons">
-                        <i class="ot-flaticon-search-1"></i>
+                    <div className="octf-search octf-cta-header">
+                      <div className="toggle_search octf-cta-icons">
+                        <i className="ot-flaticon-search-1"></i>
                       </div>
                       {/* <!-- Form Search on Header --> */}
-                      <div class="h-search-form-field collapse">
-                        <div class="h-search-form-inner">
-                          <form role="search" method="get" class="search-form">
+                      <div className="h-search-form-field collapse">
+                        <div className="h-search-form-inner">
+                          <form
+                            role="search"
+                            method="get"
+                            className="search-form"
+                          >
                             <input
                               type="search"
-                              class="search-field"
+                              className="search-field"
                               placeholder="Search..."
-                              value
                               name="s"
                             />
-                            <button type="submit" class="search-submit">
-                              <i class="ot-flaticon-search-1"></i>
+                            <button type="submit" className="search-submit">
+                              <i className="ot-flaticon-search-1"></i>
                             </button>
                           </form>
                         </div>
                       </div>
                     </div>
 
-                    <div class="octf-btn-header">
-                      <div class="ot-button">
-                        <a href="contact.html" class="octf-btn octf-btn-main">
+                    <div className="octf-btn-header">
+                      <div className="ot-button">
+                        <a
+                          href="contact.html"
+                          className="octf-btn octf-btn-main"
+                        >
                           free quote
                         </a>
                       </div>
@@ -418,41 +410,44 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div class="header_mobile">
-          <div class="container">
-            <div class="row">
-              <div class="col-5">
-                <div class="mobile_logo">
+        <div className="header_mobile">
+          <div className="container">
+            <div className="row">
+              <div className="col-5">
+                <div className="mobile_logo">
                   <Link to="/">
                     <img src="images/02_Black.svg" alt />
                   </Link>
                 </div>
               </div>
-              <div class="col-7 align-self-center text-right">
-                <div class="octf-btn-cta">
-                  <div class="octf-search-mobile octf-search octf-cta-header">
-                    <div class="toggle_search octf-cta-icons">
-                      <i class="ot-flaticon-search-1"></i>
+              <div className="col-7 align-self-center text-right">
+                <div className="octf-btn-cta">
+                  <div className="octf-search-mobile octf-search octf-cta-header">
+                    <div className="toggle_search octf-cta-icons">
+                      <i className="ot-flaticon-search-1"></i>
                     </div>
                     {/* <!-- Form Search on Header --> */}
-                    <div class="h-search-form-field collapse">
-                      <div class="h-search-form-inner">
-                        <form role="search" method="get" class="search-form">
+                    <div className="h-search-form-field collapse">
+                      <div className="h-search-form-inner">
+                        <form
+                          role="search"
+                          method="get"
+                          className="search-form"
+                        >
                           <input
                             type="search"
-                            class="search-field"
+                            className="search-field"
                             placeholder="Search..."
-                            value
                             name="s"
                           />
-                          <button type="submit" class="search-submit">
-                            <i class="ot-flaticon-search-1"></i>
+                          <button type="submit" className="search-submit">
+                            <i className="ot-flaticon-search-1"></i>
                           </button>
                         </form>
                       </div>
                     </div>
                   </div>
-                  <div class="octf-menu-mobile octf-cta-header text-left">
+                  <div className="octf-menu-mobile octf-cta-header text-left">
                     <div
                       id="mmenu-toggle"
                       className={`mmenu-toggle ${
@@ -461,10 +456,10 @@ const Header = () => {
                       onClick={toggleMobileMenu}
                     >
                       <button>
-                        <i class="ot-flaticon-menu"></i>
+                        <i className="ot-flaticon-menu"></i>
                       </button>
                     </div>
-                    <div class="site-overlay mmenu-overlay"></div>
+                    <div className="site-overlay mmenu-overlay"></div>
                     <div
                       id="mmenu-wrapper"
                       className={`mmenu-wrapper on-right ${
@@ -479,19 +474,20 @@ const Header = () => {
                         >
                           <i className="ot-flaticon-arrowsoutline"></i>
                         </a>
-                        <div class="mobile-nav">
+                        <div className="mobile-nav">
                           <ul
                             id="menu-mobile-main-menu"
-                            class="mobile_mainmenu none-style"
+                            className="mobile_mainmenu none-style"
                           >
-                            <li class="menu-item-has-children">
-                              <a href="index-2.html">Home</a>
-                              <ul class="sub-menu">
+                            <li className="menu-item-has-children">
+                              <Link to="/">Home</Link>
+
+                              <ul className="sub-menu">
                                 <li>
-                                  <a href="index-2.html">Home Main</a>
+                                  <Link to="/">Home</Link>
                                 </li>
                                 <li>
-                                  <a href="index-3.html">Home Consulting</a>
+                                  <Link to="/">Home Consulting</Link>
                                 </li>
                                 <li>
                                   <a href="index-4.html">Home Business</a>
@@ -504,14 +500,13 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li class="menu-item-has-children">
+                            <li className="menu-item-has-children">
                               <a href="#">Pages</a>
-                              <ul class="sub-menu">
+                              <ul className="sub-menu">
                                 <li>
-                                  <a href="about-us.html">About us</a>
+                                  <Link to="/aboutus">About Us</Link>
                                 </li>
                                 <li>
-                                  {/* <a href="service.html">Our Services 1</a> */}
                                   <Link to="/service">Our Services</Link>
                                 </li>
                                 <li>
@@ -526,9 +521,9 @@ const Header = () => {
                                 <li>
                                   <a href="single-team.html">Single team</a>
                                 </li>
-                                <li class="menu-item-has-children">
+                                <li className="menu-item-has-children">
                                   <a href="shop.html">Shop</a>
-                                  <ul class="sub-menu">
+                                  <ul className="sub-menu">
                                     <li>
                                       <a href="shop.html">Product Catalog</a>
                                     </li>
@@ -559,9 +554,9 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li class="menu-item-has-children">
+                            <li className="menu-item-has-children">
                               <a href="#">Portfolio</a>
-                              <ul class="sub-menu">
+                              <ul className="sub-menu">
                                 <li>
                                   <a href="portfolio-grid.html">
                                     Portfolio Grid
@@ -584,9 +579,9 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li class="menu-item-has-children">
+                            <li className="menu-item-has-children">
                               <a href="service.html">Services</a>
-                              <ul class="sub-menu">
+                              <ul className="sub-menu">
                                 <li>
                                   <a href="service-detail-1.html">
                                     Marketing Research
@@ -619,9 +614,9 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li class="menu-item-has-children">
+                            <li className="menu-item-has-children">
                               <a href="blog.html">Blog</a>
-                              <ul class="sub-menu">
+                              <ul className="sub-menu">
                                 <li>
                                   <a href="blog.html">Blog Listing</a>
                                 </li>
@@ -630,7 +625,7 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li class="current-menu-item">
+                            <li className="current-menu-item">
                               <a href="contact.html">Contacts</a>
                             </li>
                           </ul>

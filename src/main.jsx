@@ -6,6 +6,7 @@ import ErrorPage from "./error-page.jsx";
 import Layout from "./components/Layout/Layout.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Service from "./pages/Service/Service.jsx";
+import AboutUs from "./pages/AboutUs/AboutUs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element: <Service></Service>,
+      },
+      {
+        path: "/aboutus",
+        element: <AboutUs></AboutUs>,
       },
     ],
   },
