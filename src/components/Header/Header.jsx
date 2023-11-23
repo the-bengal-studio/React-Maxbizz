@@ -168,7 +168,7 @@ const Header = () => {
                             <a href="core-values.html">Our Core Values</a>
                           </li>
                           <li>
-                            <a href="our-team.html">Our team</a>
+                            <Link to="/ourteam">Our Team</Link>
                           </li>
                           <li>
                             <a href="single-team.html">Single team</a>
@@ -516,7 +516,7 @@ const Header = () => {
                                   <a href="core-values.html">Our Core Values</a>
                                 </li>
                                 <li>
-                                  <a href="our-team.html">Our team</a>
+                                  <Link to="/ourteam">Our Team</Link>
                                 </li>
                                 <li>
                                   <a href="single-team.html">Single team</a>
