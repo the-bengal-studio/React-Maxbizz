@@ -194,7 +194,7 @@ const Header = () => {
                             <a href="typography.html">Typography</a>
                           </li>
                           <li>
-                            <a href="faq.html">FAQS</a>
+                            <Link to="/faq">FAQS</Link>
                           </li>
                           <li>
                             <a href="404-error.html">404</a>
@@ -544,7 +544,7 @@ const Header = () => {
                                   <a href="typography.html">Typography</a>
                                 </li>
                                 <li>
-                                  <a href="faq.html">FAQS</a>
+                                  <Link to="/faq">FAQS</Link>
                                 </li>
                                 <li>
                                   <a href="404-error.html">404</a>

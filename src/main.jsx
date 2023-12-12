@@ -9,6 +9,7 @@ import Service from "./pages/Service/Service.jsx";
 import AboutUs from "./pages/AboutUs/AboutUs.jsx";
 import OurTeam from "./pages/OurTeam/OurTeam.jsx";
 import SingleTeam from "./pages/SingleTeam/SingleTeam.jsx";
+import FAQ from "./pages/FAQ/FAQ.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/singleteam",
         element: <SingleTeam></SingleTeam>,
+      },
+      {
+        path: "/faq",
+        element: <FAQ></FAQ>,
       },
     ],
   },
