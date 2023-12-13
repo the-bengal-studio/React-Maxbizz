@@ -1,7 +1,82 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+const AccordionItem = ({ title, content }) => {
+  const [isCurrent, setIsCurrent] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleCurrent = () => {
+    setIsCurrent(!isCurrent);
+    setIsActive(!isActive);
+  };
+
+  return (
+    <div
+      class={`acc-item ${isCurrent ? "current" : ""}`}
+      onClick={toggleCurrent}
+    >
+      <div class="acc-toggle flex-middle">
+        {title}
+        <i class="ot-flaticon-arrowsoutline"></i>
+      </div>
+      <div
+        class={`acc-content ${isActive ? "active" : ""}`}
+        style={{ display: isActive ? "block" : "none" }}
+      >
+        <p>{content}</p>
+      </div>
+    </div>
+  );
+};
+
 const FAQ = () => {
+  const accordionData1 = [
+    {
+      title: "In what areas do you provide management consulting?",
+      content:
+        "Our associate consultants specialize in a range of business areas. These include strategic planning, issues resolution, culture assessment, board effectiveness, retention strategies.",
+    },
+    {
+      title: "In which countries do you provide consulting services?",
+      content:
+        "Our associate consultants specialize in a range of business areas. These include strategic planning, issues resolution, culture assessment, board effectiveness, retention strategies.",
+    },
+    {
+      title: "How is a consulting project started and organized? ",
+      content:
+        "Our associate consultants specialize in a range of business areas. These include strategic planning, issues resolution, culture assessment, board effectiveness, retention strategies.",
+    },
+    {
+      title: "Do you do fixed price or time and materials contracts?",
+      content:
+        "Our associate consultants specialize in a range of business areas. These     include strategic planning, issues resolution, culture assessment, board effectiveness, retention strategies.",
+    },
+  ];
+  const accordionData2 = [
+    {
+      title: "Do you offer volume or loyalty discounts?",
+      content:
+        "In healthy companies, changing directions or launching new projects means combining underlying strengths  and capacities with new energy and    support.",
+    },
+    {
+      title: "What  problems does business consulting typically solve?",
+      content:
+        "In healthy companies, changing directions or launching new projects  means combining underlying strengths and capacities with new energy and support",
+    },
+    {
+      title: "How is the scope of a consulting project determined?",
+      content:
+        "In healthy companies, changing  directions or launching new projects  means combining underlying strengths   and capacities with new energy and   support.",
+    },
+    {
+      title: "How long  does a business consulting project last?",
+      content:
+        "In healthy companies, changing  directions or launching new projects   means combining underlying strengths and capacities with new energy and    support.",
+    },
+  ];
+
+  // pricing table:
+
   return (
     <div>
       <div id="content" class="site-content">
@@ -41,123 +116,55 @@ const FAQ = () => {
           <div class="row">
             <div class="col-md-6 mb-5 mb-md-0">
               <div class="ot-accordions">
-                <div class="acc-item current">
-                  <div class="acc-toggle flex-middle" data-default="yes">
-                    In what areas do you provide management consulting?
-                    <i class="ot-flaticon-arrowsoutline"></i>
-                  </div>
-                  <div class="acc-content active">
-                    <p>
-                      Our associate consultants specialize in a range of
-                      business areas. These include strategic planning, issues
-                      resolution, culture assessment, board effectiveness,
-                      retention strategies.
-                    </p>
-                  </div>
-                </div>
-                <div class="acc-item">
-                  <div class="acc-toggle flex-middle">
-                    In which countries do you provide consulting services?
-                    <i class="ot-flaticon-arrowsoutline"></i>
-                  </div>
-                  <div class="acc-content">
-                    <p>
-                      Our associate consultants specialize in a range of
-                      business areas. These include strategic planning, issues
-                      resolution, culture assessment, board effectiveness,
-                      retention strategies.
-                    </p>
-                  </div>
-                </div>
-                <div class="acc-item">
-                  <div class="acc-toggle flex-middle">
-                    How is a consulting project started and organized?
-                    <i class="ot-flaticon-arrowsoutline"></i>
-                  </div>
-                  <div class="acc-content">
-                    <p>
-                      Our associate consultants specialize in a range of
-                      business areas. These include strategic planning, issues
-                      resolution, culture assessment, board effectiveness,
-                      retention strategies.
-                    </p>
-                  </div>
-                </div>
-                <div class="acc-item">
-                  <div class="acc-toggle flex-middle">
-                    Do you do fixed price or time and materials contracts?
-                    <i class="ot-flaticon-arrowsoutline"></i>
-                  </div>
-                  <div class="acc-content">
-                    <p>
-                      Our associate consultants specialize in a range of
-                      business areas. These include strategic planning, issues
-                      resolution, culture assessment, board effectiveness,
-                      retention strategies.
-                    </p>
-                  </div>
-                </div>
+                {accordionData1.map((item, index) => (
+                  <AccordionItem
+                    key={index}
+                    title={item.title}
+                    content={item.content}
+                  />
+                ))}
               </div>
             </div>
             <div class="col-md-6">
               <div class="ot-accordions">
-                <div class="acc-item current">
-                  <div class="acc-toggle flex-middle" data-default="yes">
-                    Do you offer volume or loyalty discounts?
-                    <i class="ot-flaticon-arrowsoutline"></i>
-                  </div>
-                  <div class="acc-content active">
-                    <p>
-                      In healthy companies, changing directions or launching new
-                      projects means combining underlying strengths and
-                      capacities with new energy and support.
-                    </p>
-                  </div>
-                </div>
-                <div class="acc-item">
-                  <div class="acc-toggle flex-middle">
-                    What problems does business consulting typically solve?
-                    <i class="ot-flaticon-arrowsoutline"></i>
-                  </div>
-                  <div class="acc-content">
-                    <p>
-                      In healthy companies, changing directions or launching new
-                      projects means combining underlying strengths and
-                      capacities with new energy and support.
-                    </p>
-                  </div>
-                </div>
-                <div class="acc-item">
-                  <div class="acc-toggle flex-middle">
-                    How is the scope of a consulting project determined?
-                    <i class="ot-flaticon-arrowsoutline"></i>
-                  </div>
-                  <div class="acc-content">
-                    <p>
-                      In healthy companies, changing directions or launching new
-                      projects means combining underlying strengths and
-                      capacities with new energy and support.
-                    </p>
-                  </div>
-                </div>
-                <div class="acc-item">
-                  <div class="acc-toggle flex-middle">
-                    How long does a business consulting project last?
-                    <i class="ot-flaticon-arrowsoutline"></i>
-                  </div>
-                  <div class="acc-content">
-                    <p>
-                      In healthy companies, changing directions or launching new
-                      projects means combining underlying strengths and
-                      capacities with new energy and support.
-                    </p>
-                  </div>
-                </div>
+                {accordionData2.map((item, index) => (
+                  <AccordionItem
+                    key={index}
+                    title={item.title}
+                    content={item.content}
+                  />
+                ))}
               </div>
             </div>
           </div>
           <div class="space-60 d-none d-md-block"></div>
           <div class="space-60"></div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <div class="space-80"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+              <h2 class="mb-0 text-white">
+                Looking for a First-Class Finance Firm?
+              </h2>
+              <div class="space-10"></div>
+              <p class="mb-0 text-white">
+                We welcome and celebrate different perspectives to help our
+                firm, our clients and our people.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+              <div class="ot-button">
+                <a href="contact-us.html" class="octf-btn octf-btn-main">
+                  get in touch
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="space-80"></div>
         </div>
       </section>
     </div>
