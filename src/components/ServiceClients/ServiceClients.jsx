@@ -3,9 +3,11 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-function ServiceClients() {
+function ServiceClients({ backgroundColor }) {
+  const sectionClass = backgroundColor || "bg-color-primary";
+
   return (
-    <section className="bg-color-primary">
+    <section className={sectionClass}>
       <div className="container">
         <div className="space-60"></div>
         <div className="row">

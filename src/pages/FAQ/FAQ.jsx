@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import ServiceClients from "../../components/ServiceClients/ServiceClients";
 
 const AccordionItem = ({ title, content }) => {
   const [isCurrent, setIsCurrent] = useState(false);
@@ -76,7 +77,52 @@ const FAQ = () => {
   ];
 
   // pricing table:
+  const PricingTable = ({
+    planName,
+    monthlyPrice,
+    yearlyPrice,
+    isYearly,
+    isFeatured,
+  }) => {
+    return (
+      <div className="col-xl-4 col-md-6 mb-5 mb-md-0">
+        <div className={`ot-pricing-table  ${isFeatured ? "is-featured" : ""}`}>
+          <div class="layer-behind"></div>
+          <div class="inner-table">
+            <h6 className="title-table">
+              <span>{planName}</span>
+            </h6>
+            <h2>
+              <sup>$</sup> {isYearly ? yearlyPrice : monthlyPrice}
+            </h2>
+            <p>{isYearly ? "year" : "month"}</p>
+            <div class="short-text">
+              Discover the emerging technologies most relevant to your strategy
+              by working.
+            </div>
+            <div class="details ">
+              <ul>
+                <li class="active">Support Your Business</li>
+                <li class="active">Revoke Dokument Access</li>
+                <li class="active">Detailed Risk Profiling</li>
+                <li class="active">Enter Unlimited Bils</li>
+                <li>Bank Transactions</li>
+                <li>Financial Strategy</li>
+              </ul>
+            </div>
+            <a href="#" class="octf-btn octf-btn-border">
+              Choose Plane
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  };
+  const [isYearly, setIsYearly] = useState(false);
 
+  const handleChange = () => {
+    setIsYearly(!isYearly);
+  };
   return (
     <div>
       <div id="content" class="site-content">
@@ -167,6 +213,66 @@ const FAQ = () => {
           <div class="space-80"></div>
         </div>
       </section>
+
+      <section class="pricing-table-section">
+        <div class="container">
+          <div class="space-90"></div>
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+              <div class="ot-heading">
+                <span class="is_highlight">flexible pricing plans</span>
+                <h3 class="main-head text-white">Choose The Best Plan</h3>
+              </div>
+              <div class="space-20"></div>
+              <div class="space-3"></div>
+              <p class="text-white px-xl-5 mx-xl-5">
+                In healthy companies, changing directions or launching new
+                projects means combining underlying strengths and capacities
+                with new.
+              </p>
+              <div class="space-30"></div>
+
+              <div className="ot-switcher">
+                <span className="l-switch active text-white">
+                  {isYearly ? "Billed Yearly" : "Billed Monthly"}
+                </span>
+                <label className="switch">
+                  <input type="checkbox" onChange={handleChange} />
+                  <span className="slider round"></span>
+                </label>
+                <span className="r-switch text-white">
+                  {isYearly ? "Billed Monthly" : "Billed Yearly"}
+                </span>
+              </div>
+              <div class="space-60"></div>
+            </div>
+          </div>
+          <div class="row justify-content-center pricing-monthly">
+            <PricingTable
+              planName="Basic Plan"
+              monthlyPrice={69}
+              yearlyPrice={699}
+              isYearly={isYearly}
+            />
+            <PricingTable
+              planName="Ultra Plan"
+              monthlyPrice={79}
+              yearlyPrice={799}
+              isYearly={isYearly}
+              isFeatured={true}
+            />
+            <PricingTable
+              planName="Pro Plan"
+              monthlyPrice={89}
+              yearlyPrice={899}
+              isYearly={isYearly}
+            />
+          </div>
+        </div>
+      </section>
+      <div class="space-120"></div>
+      <ServiceClients backgroundColor=""></ServiceClients>
+      <div class="space-120"></div>
     </div>
   );
 };
