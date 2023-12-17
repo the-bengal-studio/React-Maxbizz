@@ -10,6 +10,7 @@ import AboutUs from "./pages/AboutUs/AboutUs.jsx";
 import OurTeam from "./pages/OurTeam/OurTeam.jsx";
 import SingleTeam from "./pages/SingleTeam/SingleTeam.jsx";
 import FAQ from "./pages/FAQ/FAQ.jsx";
+import ServiceDetail1 from "./pages/ServiceDetail1/ServiceDetail1.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element: <Service></Service>,
+      },
+      {
+        path: "/servicedetail1",
+        element: <ServiceDetail1></ServiceDetail1>,
       },
       {
         path: "/aboutus",

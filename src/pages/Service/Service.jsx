@@ -39,22 +39,30 @@ const Service = () => {
           <div class="row">
             <div class="col-xl-4 col-md-6 mb-5">
               <div class="ot-image-box">
-                <a href="service-detail-1.html">
+                {/* <a href="service-detail-1.html">
                   <img src="/images/services/service-box1.jpg" alt />
-                </a>
+                </a> */}
+                <Link to="/servicedetail1">
+                  <img src="/images/services/service-box1.jpg" alt />
+                </Link>
                 <div class="content-box">
                   <h5 class="title-box">
-                    <a href="service-detail-1.html">Marketing Research</a>
+                    {/* <a href="service-detail-1.html">Marketing Research</a> */}
+                    <Link to="/servicedetail1">Marketing Research</Link>
                   </h5>
                   <p>
                     Analysis of the market as a whole and its particular
                     components (competitors, consumers, product, etc.)
                   </p>
                 </div>
-                <a href="service-detail-1.html" class="link-box font-second">
+                {/* <a href="service-detail-1.html" class="link-box font-second">
                   <span>Explore More</span>
                   <i class="ot-flaticon-trajectory"></i>
-                </a>
+                </a> */}
+                <Link to="/servicedetail1" class="link-box font-second">
+                  <span>Explore More</span>
+                  <i class="ot-flaticon-trajectory"></i>
+                </Link>
               </div>
             </div>
             <div class="col-xl-4 col-md-6 mb-5">

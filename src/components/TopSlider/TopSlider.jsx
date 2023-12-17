@@ -29,13 +29,13 @@ export default () => {
               <h2>
                 Global Presence is <br /> Key to Clients' <br /> Success Ideas
               </h2>
-              <div class="d-none d-sm-block ot-video-button flex-middle">
+              <div class="ot-video-button flex-middle">
                 <button className="octf-btn octf-btn-primary btn-slider btn-large">
                   EXPLORE MORE
                 </button>
                 <a
                   target="_blank"
-                  className="btn-play ms-3"
+                  className="btn-play ml-3"
                   href="https://vimeo.com/87959439"
                 >
                   <i class="ot-flaticon-play"></i>

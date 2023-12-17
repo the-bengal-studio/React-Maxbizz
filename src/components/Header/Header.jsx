@@ -24,6 +24,14 @@ const Header = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Toggle submenu visibility
+  const toggleSubMenu = (event) => {
+    const parentLi = event.currentTarget.parentNode;
+    const subMenu = parentLi.querySelector("> ul");
+    subMenu.classList.toggle("active");
+    event.currentTarget.classList.toggle("active");
+  };
+
   return (
     <div>
       <header
@@ -481,7 +489,10 @@ const Header = () => {
                           >
                             <li className="menu-item-has-children">
                               <Link to="/">Home</Link>
-
+                              <span className="arrow" onClick={toggleSubMenu}>
+                                {/* Replace the content below with your arrow icon */}
+                                <i className="ot-flaticon-next"></i>
+                              </span>
                               <ul className="sub-menu">
                                 <li>
                                   <Link to="/">Home</Link>
