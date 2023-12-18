@@ -263,13 +263,14 @@ const Header = () => {
                         </ul>
                       </li>
                       <li className="menu-item-has-children">
-                        <a href="blog.html">Blog</a>
+                        <Link to="/blog">Blog</Link>
+
                         <ul className="sub-menu">
                           <li>
-                            <a href="blog.html">Blog Listing</a>
+                            <Link to="/blog">Blog Listing</Link>
                           </li>
                           <li>
-                            <a href="post.html">Blog Post</a>
+                            <Link to="/post">Blog Post</Link>
                           </li>
                         </ul>
                       </li>
@@ -625,13 +626,13 @@ const Header = () => {
                               </ul>
                             </li>
                             <li className="menu-item-has-children">
-                              <a href="blog.html">Blog</a>
+                              <Link to="/blog">Blog</Link>
                               <ul className="sub-menu">
                                 <li>
-                                  <a href="blog.html">Blog Listing</a>
+                                  <Link to="/blog">Blog Listing</Link>
                                 </li>
                                 <li>
-                                  <a href="post.html">Blog Post</a>
+                                  <Link to="/post">Blog Post</Link>
                                 </li>
                               </ul>
                             </li>

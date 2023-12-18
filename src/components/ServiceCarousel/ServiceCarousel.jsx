@@ -14,11 +14,7 @@ const ServiceCarousel = () => {
       data-dots="true"
     >
       <div class="container-fluid">
-        <div className="row title" style={{ marginBottom: "20px" }}>
-          {/* <div class="col-sm-12 btn btn-info">
-            Owl Carousel In React Application
-          </div> */}
-        </div>
+        <div className="row title" style={{ marginBottom: "20px" }}></div>
       </div>
       <div class="container-fluid">
         <OwlCarousel items={1} className="owl-theme" loop margin={8}>

@@ -17,6 +17,8 @@ import ServiceDetail4 from "./pages/ServiceDetail4/ServiceDetail4.jsx";
 import ServiceDetail5 from "./pages/ServiceDetail5/ServiceDetail5.jsx";
 import ServiceDetail6 from "./pages/ServiceDetail6/ServiceDetail6.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
+import Blog from "./pages/Blog/Blog.jsx";
+import Post from "./pages/Post/Post.jsx";
 
 const router = createBrowserRouter([
   {
@@ -76,6 +78,14 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
+      },
+      {
+        path: "/post",
+        element: <Post></Post>,
       },
     ],
   },
