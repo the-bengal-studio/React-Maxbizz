@@ -239,30 +239,26 @@ const Header = () => {
                         <a href="service.html">Services</a>
                         <ul className="sub-menu">
                           <li>
-                            <a href="service-detail-1.html">
-                              Marketing Research
-                            </a>
+                            <Link to="/servicedetail1">Marketing Research</Link>
                           </li>
                           <li>
-                            <a href="service-detail-2.html">
+                            <Link to="/servicedetail2">
                               Organizational Audit
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="service-detail-3.html">
+                            <Link to="/servicedetail3">
                               Business Consulting
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="service-detail-4.html">
-                              Project Management
-                            </a>
+                            <Link to="/servicedetail4">Project Management</Link>
                           </li>
                           <li>
-                            <a href="service-detail-5.html">Support Function</a>
+                            <Link to="/servicedetail5">Support Functions</Link>
                           </li>
                           <li>
-                            <a href="service-detail-6.html">Finance Planning</a>
+                            <Link to="/servicedetail6">Finance Planning</Link>
                           </li>
                         </ul>
                       </li>
@@ -278,7 +274,7 @@ const Header = () => {
                         </ul>
                       </li>
                       <li>
-                        <a href="contact.html">Contacts</a>
+                        <Link to="/contact">Contact</Link>
                       </li>
                     </ul>
                   </nav>
@@ -404,12 +400,15 @@ const Header = () => {
 
                     <div className="octf-btn-header">
                       <div className="ot-button">
-                        <a
+                        {/* <a
                           href="contact.html"
                           className="octf-btn octf-btn-main"
                         >
                           free quote
-                        </a>
+                        </a> */}
+                        <Link to="/contact" className="octf-btn octf-btn-main">
+                          free quote
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -594,34 +593,34 @@ const Header = () => {
                               <a href="service.html">Services</a>
                               <ul className="sub-menu">
                                 <li>
-                                  <a href="service-detail-1.html">
+                                  <Link to="/servicedetail1">
                                     Marketing Research
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="service-detail-2.html">
+                                  <Link to="/servicedetail2">
                                     Organizational Audit
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="service-detail-3.html">
+                                  <Link to="/servicedetail3">
                                     Business Consulting
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="service-detail-4.html">
+                                  <Link to="/servicedetail4">
                                     Project Management
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="service-detail-5.html">
-                                    Support Function
-                                  </a>
+                                  <Link to="/servicedetail5">
+                                    Support Functions
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="service-detail-6.html">
+                                  <Link to="/servicedetail6">
                                     Finance Planning
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </li>
@@ -637,7 +636,7 @@ const Header = () => {
                               </ul>
                             </li>
                             <li className="current-menu-item">
-                              <a href="contact.html">Contacts</a>
+                              <Link to="/contact">Contact</Link>
                             </li>
                           </ul>
                         </div>

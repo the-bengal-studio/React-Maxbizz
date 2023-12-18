@@ -1,30 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ServiceDetail1 = () => {
+const ServiceDetail6 = () => {
   return (
     <div>
       <div id="content" class="site-content">
         <div class="page-header flex-middle page-header-service">
           <div class="container">
             <div class="inner flex-middle">
-              <h1 class="page-title">Marketing Research</h1>
+              <h1 class="page-title">Finance Planning</h1>
               <ul id="breadcrumbs" class="breadcrumbs none-style">
                 <li>
                   <Link to="/">Home</Link>
                 </li>
-                <li class="active">Marketing Research</li>
+                <li class="active">Finance Planning</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+
       <section>
         <div class="container">
           <div class="space-90"></div>
           <div class="row">
             <div class="col-xl-9 col-lg-8 mb-5 mb-lg-0">
-              <img src="images/service-box1.jpg" alt class="rounded-img" />
+              <img src="images/service-box6.jpg" alt class="rounded-img" />
               <div class="space-40"></div>
               <h3>We Conduct Marketing Research</h3>
               <div class="space-5"></div>
@@ -189,6 +190,7 @@ const ServiceDetail1 = () => {
                     </svg>
                   </span>
                   <span class="list-text">
+                    {" "}
                     <span style={{ color: "#262832", fontWeight: 600 }}>
                       there are projects that require temporary expansion
                     </span>{" "}
@@ -282,23 +284,22 @@ const ServiceDetail1 = () => {
                 <h6 class="widget-title">Services</h6>
                 <ul>
                   <li>
-                    <Link to="/servicedetail1">Marketing Research</Link>
+                    <a href="service-detail-1.html">marketing research</a>
                   </li>
                   <li>
-                    <Link to="/servicedetail2">Organizational Audit</Link>
-                  </li>
-
-                  <li>
-                    <Link to="/servicedetail3">Business Consulting</Link>
+                    <a href="service-detail-2.html">Organizational Audit</a>
                   </li>
                   <li>
-                    <Link to="/servicedetail4">Project Management</Link>
+                    <a href="service-detail-3.html">business consulting</a>
                   </li>
                   <li>
-                    <Link to="/servicedetail5">Support Functions</Link>
+                    <a href="service-detail-4.html">project management</a>
                   </li>
                   <li>
-                    <Link to="/servicedetail6">Finance Planning</Link>
+                    <a href="service-detail-5.html">support functions</a>
+                  </li>
+                  <li>
+                    <a href="service-detail-6.html">finance planning</a>
                   </li>
                 </ul>
               </aside>
@@ -382,37 +383,38 @@ const ServiceDetail1 = () => {
           <div class="space-100"></div>
         </div>
       </section>
-      <section className="service-cta">
-        <div className="container">
-          <div className="service-icon-cta">
-            <div className="row align-items-center">
-              <div className="col-text col-xl-4 mb-4 mb-xl-0">
+
+      <section class="service-cta">
+        <div class="container">
+          <div class="service-icon-cta">
+            <div class="row align-items-center">
+              <div class="col-text col-xl-4 mb-4 mb-xl-0">
                 <h4>Ready to Get Started?</h4>
               </div>
-              <div className="col-form col-xl-8">
-                <form className="service-cta-form">
-                  <div className="team-form flex-middle wpcf7-placeholder-light">
+              <div class="col-form col-xl-8">
+                <form class="service-cta-form">
+                  <div class="team-form flex-middle wpcf7-placeholder-light">
                     <input
                       size="40"
-                      className="wpcf7-form-control wpcf7-text"
+                      class="wpcf7-form-control wpcf7-text"
                       aria-required="true"
                       aria-invalid="false"
                       placeholder="Your Name *"
-                      value=""
+                      value
                       type="text"
                       name="your-name"
                     />
                     <input
                       size="40"
-                      className="wpcf7-form-control wpcf7-email wpcf7-text"
+                      class="wpcf7-form-control wpcf7-email wpcf7-text"
                       aria-required="true"
                       aria-invalid="false"
                       placeholder="Your Email *"
-                      value=""
+                      value
                       type="email"
                       name="your-email"
                     />
-                    <button type="submit" className="octf-btn">
+                    <button type="submit" class="octf-btn">
                       Subscribe Now
                     </button>
                   </div>
@@ -426,4 +428,4 @@ const ServiceDetail1 = () => {
   );
 };
 
-export default ServiceDetail1;
+export default ServiceDetail6;
