@@ -23,12 +23,44 @@ export default () => {
           <div className="keen-slider__slide">
             <img src="/images/slider/slider1-home2.jpg" alt="" />
             <div className="container text-overlay">
-              <p className="d-none d-sm-block mt-5 text-top ">
-                DIVERSITY & INCLUSION
-              </p>
-              <h2>
-                Global Presence is <br /> Key to Clients' <br /> Success Ideas
-              </h2>
+              <div>
+                <p className="d-none d-sm-block mt-5 text-top ">
+                  DIVERSITY & INCLUSION
+                </p>
+              </div>
+              <div>
+                <h2>
+                  Global Presence is <br /> Key to Clients' <br /> Success Ideas
+                </h2>
+              </div>
+              <div class="ot-video-button flex-middle">
+                <button className="octf-btn octf-btn-primary btn-slider btn-large">
+                  EXPLORE MORE
+                </button>
+                <a
+                  target="_blank"
+                  className="btn-play ml-3"
+                  href="https://vimeo.com/87959439"
+                >
+                  <i class="ot-flaticon-play"></i>
+                </a>
+                <span class="font-second">watch video</span>
+              </div>
+            </div>
+          </div>
+          <div className="keen-slider__slide">
+            <img src="/images/slider/slider2-home2.jpg" alt="" />
+            <div className="container text-overlay">
+              <div>
+                <p className="d-none d-sm-block mt-5 text-top ">
+                  BEST FINANCIAL ADVICE
+                </p>
+              </div>
+              <div>
+                <h2>
+                  We were Born in <br /> NY and Active All <br /> Over the World
+                </h2>
+              </div>
               <div class="ot-video-button flex-middle">
                 <button className="octf-btn octf-btn-primary btn-slider btn-large">
                   EXPLORE MORE
@@ -47,19 +79,23 @@ export default () => {
           <div className="keen-slider__slide">
             <img src="/images/slider/slider3-home2.jpg" alt="" />
             <div className="container text-overlay">
-              <p className="d-none d-sm-block mt-5 text-top ">
-                Best Financial Advice
-              </p>
-              <h2>
-                We Help Move All <br /> Your Business <br /> Forward
-              </h2>
-              <div class="d-none d-sm-block ot-video-button flex-middle">
+              <div>
+                <p className="d-none d-sm-block mt-5 text-top ">
+                  Best Financial Advice
+                </p>
+              </div>
+              <div>
+                <h2>
+                  We Help Move All <br /> Your Business <br /> Forward
+                </h2>
+              </div>
+              <div class="ot-video-button flex-middle">
                 <button className="octf-btn octf-btn-primary btn-slider btn-large">
                   EXPLORE MORE
                 </button>
                 <a
                   target="_blank"
-                  className="btn-play ms-3"
+                  className="btn-play ml-3"
                   href="https://vimeo.com/87959439"
                 >
                   <i class="ot-flaticon-play"></i>

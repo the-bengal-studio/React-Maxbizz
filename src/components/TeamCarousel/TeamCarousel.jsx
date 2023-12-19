@@ -1,183 +1,156 @@
 import React from "react";
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./TeamCarousel.css";
 
-const animation = { duration: 100000, easing: (t) => t };
-export default () => {
-  const [sliderRef] = useKeenSlider({
-    slides: {
-      perView: window.innerWidth < 576 ? 1 : 5, // Show 1 image on mobile, 5 images on larger screens
-      spacing: 15,
-    },
-    renderMode: "performance",
-    drag: false,
-    created(s) {
-      s.moveToIdx(5, true, animation);
-    },
-    updated(s) {
-      s.moveToIdx(s.track.details.abs + 5, true, animation);
-    },
-    animationEnded(s) {
-      s.moveToIdx(s.track.details.abs + 5, true, animation);
-    },
-  });
-
-  const handleResize = () => {
-    if (sliderRef.current) {
-      const perView = window.innerWidth < 576 ? 1 : 5;
-      sliderRef.current.details().widthContainer = window.innerWidth;
-      sliderRef.current.details().perView = perView;
-      sliderRef.current.resize();
-    }
-  };
-
-  React.useEffect(() => {
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [sliderRef]);
+const TeamCarousel = () => {
   return (
-    <div ref={sliderRef} className="keen-slider">
-      <div className="keen-slider__slide number-slide-team">
-        <div class="ot-team team-2 circle-social">
-          <div class="team-thumb">
-            <img src="images/team5.jpg" alt />
-          </div>
-          <div class="team-info">
-            <h6 class="tname">Mary Flynn</h6>
-            <span>CHIEF TECHNOLOGY OFFICER</span>
-            <div class="team-social">
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-twitter"></i>
-              </a>
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-facebook-f"></i>
-              </a>
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-pinterest-p"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+    <div
+      className="ot-testimonials ot-testimonials-carousel-2 "
+      data-loop="true"
+      data-auto="true"
+      data-time="7000"
+      data-dots="true"
+    >
+      <div class="container-fluid">
+        <div className="row title" style={{ marginBottom: "20px" }}></div>
       </div>
-      <div className="keen-slider__slide number-slide-team">
-        <div class="ot-team team-2 circle-social">
-          <div class="team-thumb">
-            <img src="images/team1.jpg" alt />
-          </div>
-          <div class="team-info">
-            <h6 class="tname">Monica Black</h6>
-            <span>CHIEF TECHNOLOGY OFFICER</span>
-            <div class="team-social">
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-twitter"></i>
-              </a>
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-facebook-f"></i>
-              </a>
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-pinterest-p"></i>
-              </a>
+      <div class="container-fluid">
+        <OwlCarousel
+          items={5}
+          responsive={{
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 6,
+            },
+          }}
+          className="owl-theme"
+          loop
+          margin={8}
+        >
+          <div>
+            <div class="ot-team team-2 circle-social">
+              <div class="team-thumb">
+                <img src="images/team5.jpg" alt />
+              </div>
+              <div class="team-info">
+                <h6 class="tname">Mary Flynn</h6>
+                <span>CHIEF TECHNOLOGY OFFICER</span>
+                <div class="team-social">
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-twitter"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-pinterest-p"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>{" "}
-      </div>
-      <div className="keen-slider__slide number-slide-team">
-        <div class="ot-team team-2 circle-social">
-          <div class="team-thumb">
-            <img src="images/team2.jpg" alt />
-          </div>
-          <div class="team-info">
-            <h6 class="tname">Peter Perish</h6>
-            <span>INTERNATIONAL CONSULTANT</span>
-            <div class="team-social">
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-twitter"></i>
-              </a>
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-facebook-f"></i>
-              </a>
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-pinterest-p"></i>
-              </a>
+          <div>
+            <div class="ot-team team-2 circle-social">
+              <div class="team-thumb">
+                <img src="images/team1.jpg" alt />
+              </div>
+              <div class="team-info">
+                <h6 class="tname">Monica Black</h6>
+                <span>CHIEF TECHNOLOGY OFFICER</span>
+                <div class="team-social">
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-twitter"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-pinterest-p"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>{" "}
-      </div>
-      <div className="keen-slider__slide number-slide-team">
-        <div class="ot-team team-2 circle-social">
-          <div class="team-thumb">
-            <img src="images/team3.jpg" alt />
-          </div>
-          <div class="team-info">
-            <h6 class="tname">Olivia Woodson</h6>
-            <span>INTERNATIONAL CONSULTANT</span>
-            <div class="team-social">
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-twitter"></i>
-              </a>
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-facebook-f"></i>
-              </a>
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-pinterest-p"></i>
-              </a>
+          <div>
+            <div class="ot-team team-2 circle-social">
+              <div class="team-thumb">
+                <img src="images/team2.jpg" alt />
+              </div>
+              <div class="team-info">
+                <h6 class="tname">Peter Perish</h6>
+                <span>INTERNATIONAL CONSULTANT</span>
+                <div class="team-social">
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-twitter"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-pinterest-p"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>{" "}
-      </div>
-      <div className="keen-slider__slide number-slide-team">
-        <div class="ot-team team-2 circle-social">
-          <div class="team-thumb">
-            <img src="images/team4.jpg" alt />
-          </div>
-          <div class="team-info">
-            <h6 class="tname">Peter Adams</h6>
-            <span>CO-FOUNDER OF COMPANY</span>
-            <div class="team-social">
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-twitter"></i>
-              </a>
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-facebook-f"></i>
-              </a>
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-pinterest-p"></i>
-              </a>
+          <div>
+            <div class="ot-team team-2 circle-social">
+              <div class="team-thumb">
+                <img src="images/team3.jpg" alt />
+              </div>
+              <div class="team-info">
+                <h6 class="tname">Olivia Woodson</h6>
+                <span>INTERNATIONAL CONSULTANT</span>
+                <div class="team-social">
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-twitter"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-pinterest-p"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>{" "}
-      </div>
-      <div className="keen-slider__slide number-slide-team">
-        <div class="ot-team team-2 circle-social">
-          <div class="team-thumb">
-            <img src="images/team6.jpg" alt />
-          </div>
-          <div class="team-info">
-            <h6 class="tname">Adam Oswald</h6>
-            <span>CHIEF MARKETING OFFICER</span>
-            <div class="team-social">
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-twitter"></i>
-              </a>
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-facebook-f"></i>
-              </a>
-              <a rel="nofollow" href="#">
-                <i aria-hidden="true" class="fab fa-pinterest-p"></i>
-              </a>
+          <div>
+            <div class="ot-team team-2 circle-social">
+              <div class="team-thumb">
+                <img src="images/team4.jpg" alt />
+              </div>
+              <div class="team-info">
+                <h6 class="tname">Peter Adams</h6>
+                <span>CO-FOUNDER OF COMPANY</span>
+                <div class="team-social">
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-twitter"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-pinterest-p"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>{" "}
-        </div>
-        <div className="keen-slider__slide number-slide-team">
+          </div>
           <div class="ot-team team-2 circle-social">
             <div class="team-thumb">
-              <img src="images/team7.jpg" alt />
+              <img src="images/team6.jpg" alt />
             </div>
             <div class="team-info">
-              <h6 class="tname">Kate Green</h6>
-              <span>CHIEF FINANCIAL OFFICER</span>
+              <h6 class="tname">Adam Oswald</h6>
+              <span>CHIEF MARKETING OFFICER</span>
               <div class="team-social">
                 <a rel="nofollow" href="#">
                   <i aria-hidden="true" class="fab fa-twitter"></i>
@@ -190,31 +163,55 @@ export default () => {
                 </a>
               </div>
             </div>
-          </div>{" "}
-        </div>
-        <div className="keen-slider__slide number-slide-team">
-          <div class="ot-team team-2 circle-social">
-            <div class="team-thumb">
-              <img src="images/team8.jpg" alt />
-            </div>
-            <div class="team-info">
-              <h6 class="tname">Harry Septem</h6>
-              <span>CO-FOUNDER OF COMPANY</span>
-              <div class="team-social">
-                <a rel="nofollow" href="#">
-                  <i aria-hidden="true" class="fab fa-twitter"></i>
-                </a>
-                <a rel="nofollow" href="#">
-                  <i aria-hidden="true" class="fab fa-facebook-f"></i>
-                </a>
-                <a rel="nofollow" href="#">
-                  <i aria-hidden="true" class="fab fa-pinterest-p"></i>
-                </a>
+          </div>
+          <div>
+            <div class="ot-team team-2 circle-social">
+              <div class="team-thumb">
+                <img src="images/team7.jpg" alt />
+              </div>
+              <div class="team-info">
+                <h6 class="tname">Kate Green</h6>
+                <span>CHIEF FINANCIAL OFFICER</span>
+                <div class="team-social">
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-twitter"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-pinterest-p"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>{" "}
-        </div>
+          </div>
+          <div>
+            <div class="ot-team team-2 circle-social">
+              <div class="team-thumb">
+                <img src="images/team8.jpg" alt />
+              </div>
+              <div class="team-info">
+                <h6 class="tname">Harry Septem</h6>
+                <span>CO-FOUNDER OF COMPANY</span>
+                <div class="team-social">
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-twitter"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                  </a>
+                  <a rel="nofollow" href="#">
+                    <i aria-hidden="true" class="fab fa-pinterest-p"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </OwlCarousel>
       </div>
     </div>
   );
 };
+
+export default TeamCarousel;

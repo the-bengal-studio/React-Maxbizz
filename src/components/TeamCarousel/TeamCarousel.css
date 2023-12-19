@@ -1,16 +1,3 @@
-body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-[class^="number-slide-team"],
-[class*=" number-slide-team"] {
-  color: #fff;
-  font-weight: 500;
-  height: 300px;
-  margin-bottom: 100px;
-}
-.number-slide-team img {
+.owl-dots {
+  top: 105% !important;
 }

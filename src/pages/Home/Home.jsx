@@ -646,6 +646,7 @@ const Home = () => {
         </div>
         <div className="container-fluid">
           <TeamCarousel></TeamCarousel>
+          <div className="space-90"></div>
         </div>
       </section>
       <section className="consulting-video">
