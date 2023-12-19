@@ -1,3 +1,4 @@
 .owl-dots {
+  position: inherit !important;
   bottom: 8% !important;
 }

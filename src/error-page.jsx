@@ -14,9 +14,9 @@ export default function ErrorPage() {
               <div class="col-lg-12 text-center">
                 <div class="error-logo">
                   <div class="the-logo">
-                    <a href="index-2.html">
+                    <Link to="/">
                       <img src="images/logo-white.svg" alt />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div class="page-content">

@@ -1046,16 +1046,16 @@ const Home = () => {
                         <a href="#">business</a>
                       </span>
                     </div>
-                    <a href="post.html">
+                    <Link to="/post">
                       <img src="/images/blog/blog-1.jpg" alt />
-                    </a>
+                    </Link>
                   </div>
                   <div class="inner-post">
                     <div class="entry-header">
                       <h5 class="entry-title mb-0">
-                        <a href="post.html">
+                        <Link to="/post">
                           Contactless Payments’ Time Has Come
-                        </a>
+                        </Link>
                       </h5>
                     </div>
                   </div>
@@ -1066,9 +1066,9 @@ const Home = () => {
                     <span class="comment-num">
                       / <a href="#">3 Comments</a>
                     </span>
-                    <a class="btn-details" href="post.html">
+                    <Link to="/post" class="btn-details">
                       <i class="ot-flaticon-trajectory"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -1083,16 +1083,16 @@ const Home = () => {
                         <a href="#">marketing</a>
                       </span>
                     </div>
-                    <a href="post.html">
+                    <Link to="/post">
                       <img src="/images/blog/gallery-1.jpg" alt />
-                    </a>
+                    </Link>
                   </div>
                   <div class="inner-post">
                     <div class="entry-header">
                       <h5 class="entry-title mb-0">
-                        <a href="post.html">
+                        <Link to="/post">
                           The Future of Retail: Asia’s Ecosystems
-                        </a>
+                        </Link>
                       </h5>
                     </div>
                   </div>
@@ -1103,9 +1103,9 @@ const Home = () => {
                     <span class="comment-num">
                       / <a href="#">3 Comments</a>
                     </span>
-                    <a class="btn-details" href="post.html">
+                    <Link to="/post" class="btn-details">
                       <i class="ot-flaticon-trajectory"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -1119,16 +1119,16 @@ const Home = () => {
                         <a href="#">business</a>
                       </span>
                     </div>
-                    <a href="post.html">
+                    <Link to="/post">
                       <img src="/images/blog/gallery-2.jpg" alt />
-                    </a>
+                    </Link>
                   </div>
                   <div class="inner-post">
                     <div class="entry-header">
                       <h5 class="entry-title mb-0">
-                        <a href="post.html">
+                        <Link to="/post">
                           Digital Transformation Roadmap: Enablers
-                        </a>
+                        </Link>
                       </h5>
                     </div>
                   </div>
@@ -1139,9 +1139,9 @@ const Home = () => {
                     <span class="comment-num">
                       / <a href="#">3 Comments</a>
                     </span>
-                    <a class="btn-details" href="post.html">
+                    <Link to="/post" class="btn-details">
                       <i class="ot-flaticon-trajectory"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -1150,9 +1150,9 @@ const Home = () => {
           <div class="row">
             <div class="col-lg-12">
               <div class="ot-button text-center">
-                <a href="blog.html" class="octf-btn octf-btn-main">
+                <Link to="/blog" class="octf-btn octf-btn-main">
                   view all
-                </a>
+                </Link>
               </div>
             </div>
           </div>

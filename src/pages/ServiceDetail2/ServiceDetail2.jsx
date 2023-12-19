@@ -367,9 +367,9 @@ const ServiceDetail2 = () => {
             </div>
             <div class="col-lg-4 text-lg-right">
               <div class="ot-button">
-                <a href="contact-us.html" class="octf-btn octf-btn-main">
+                <Link to="/contact" class="octf-btn octf-btn-main">
                   get in touch
-                </a>
+                </Link>
               </div>
             </div>
           </div>

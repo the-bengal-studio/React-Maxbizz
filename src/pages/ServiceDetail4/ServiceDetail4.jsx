@@ -282,22 +282,22 @@ const ServiceDetail4 = () => {
                 <h6 class="widget-title">Services</h6>
                 <ul>
                   <li>
-                    <a href="service-detail-1.html">marketing research</a>
+                    <Link to="/servicedetail1">Marketing Research</Link>
                   </li>
                   <li>
-                    <a href="service-detail-2.html">Organizational Audit</a>
+                    <Link to="/servicedetail2">Organizational Audit</Link>
                   </li>
                   <li>
-                    <a href="service-detail-3.html">business consulting</a>
+                    <Link to="/servicedetail3">Business Consulting</Link>
                   </li>
                   <li>
-                    <a href="service-detail-4.html">project management</a>
+                    <Link to="/servicedetail4">Project Management</Link>
                   </li>
                   <li>
-                    <a href="service-detail-5.html">support functions</a>
+                    <Link to="/servicedetail5">Support Functions</Link>
                   </li>
                   <li>
-                    <a href="service-detail-6.html">finance planning</a>
+                    <Link to="/servicedetail6">Finance Planning</Link>
                   </li>
                 </ul>
               </aside>

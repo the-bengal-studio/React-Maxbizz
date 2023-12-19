@@ -287,7 +287,6 @@ const ServiceDetail1 = () => {
                   <li>
                     <Link to="/servicedetail2">Organizational Audit</Link>
                   </li>
-
                   <li>
                     <Link to="/servicedetail3">Business Consulting</Link>
                   </li>

@@ -39,15 +39,11 @@ const Service = () => {
           <div class="row">
             <div class="col-xl-4 col-md-6 mb-5">
               <div class="ot-image-box">
-                {/* <a href="service-detail-1.html">
-                  <img src="/images/services/service-box1.jpg" alt />
-                </a> */}
                 <Link to="/servicedetail1">
                   <img src="/images/services/service-box1.jpg" alt />
                 </Link>
                 <div class="content-box">
                   <h5 class="title-box">
-                    {/* <a href="service-detail-1.html">Marketing Research</a> */}
                     <Link to="/servicedetail1">Marketing Research</Link>
                   </h5>
                   <p>
@@ -55,10 +51,7 @@ const Service = () => {
                     components (competitors, consumers, product, etc.)
                   </p>
                 </div>
-                {/* <a href="service-detail-1.html" class="link-box font-second">
-                  <span>Explore More</span>
-                  <i class="ot-flaticon-trajectory"></i>
-                </a> */}
+
                 <Link to="/servicedetail1" class="link-box font-second">
                   <span>Explore More</span>
                   <i class="ot-flaticon-trajectory"></i>
@@ -67,102 +60,102 @@ const Service = () => {
             </div>
             <div class="col-xl-4 col-md-6 mb-5">
               <div class="ot-image-box">
-                <a href="service-detail-1.html">
+                <Link to="/servicedetail2">
                   <img src="/images/services/service-box2.jpg" alt />
-                </a>
+                </Link>
                 <div class="content-box">
                   <h5 class="title-box">
-                    <a href="service-detail-1.html">Organizational Audit</a>
+                    <Link to="/servicedetail2">Organizational Audit</Link>
                   </h5>
                   <p>
                     Analysis of internal processes & procedures, staff activity
                     evaluation, evaluation of technologies.
                   </p>
                 </div>
-                <a href="service-detail-1.html" class="link-box font-second">
+                <Link to="/servicedetail2" class="link-box font-second">
                   <span>Explore More</span>
                   <i class="ot-flaticon-trajectory"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div class="col-xl-4 col-md-6 mb-5">
               <div class="ot-image-box">
-                <a href="service-detail-1.html">
+                <Link to="/servicedetail3">
                   <img src="/images/services/service-box3.jpg" alt />
-                </a>
+                </Link>
                 <div class="content-box">
                   <h5 class="title-box">
-                    <a href="service-detail-1.html">Business Consulting</a>
+                    <Link to="/servicedetail3">Business Consulting</Link>
                   </h5>
                   <p>
                     Successful experience of experts in structuring investment
                     projects, developing and implementing.
                   </p>
                 </div>
-                <a href="service-detail-1.html" class="link-box font-second">
+                <Link to="/servicedetail3" class="link-box font-second">
                   <span>Explore More</span>
                   <i class="ot-flaticon-trajectory"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div class="col-xl-4 col-md-6 mb-5 mb-xl-0">
               <div class="ot-image-box">
-                <a href="service-detail-1.html">
+                <Link to="/servicedetail4">
                   <img src="/images/services/service-box4.jpg" alt />
-                </a>
+                </Link>
                 <div class="content-box">
                   <h5 class="title-box">
-                    <a href="service-detail-1.html">Project Management</a>
+                    <Link to="/servicedetail4">Project Management</Link>
                   </h5>
                   <p>
                     We are working in the format of an outsourcing project
                     office. We assume operational coordination.
                   </p>
                 </div>
-                <a href="service-detail-1.html" class="link-box font-second">
+                <Link to="/servicedetail4" class="link-box font-second">
                   <span>Explore More</span>
                   <i class="ot-flaticon-trajectory"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div class="col-xl-4 col-md-6 mb-5 mb-md-0">
               <div class="ot-image-box">
-                <a href="service-detail-1.html">
+                <Link to="/servicedetail5">
                   <img src="/images/services/service-box5.jpg" alt />
-                </a>
+                </Link>
                 <div class="content-box">
                   <h5 class="title-box">
-                    <a href="service-detail-1.html">Support Functions</a>
+                    <Link to="/servicedetail5">Support Functions</Link>
                   </h5>
                   <p>
                     Integrating of innovation and public benefit into your
                     workflows; ensuring strategic and sustainable.
                   </p>
                 </div>
-                <a href="service-detail-1.html" class="link-box font-second">
+                <Link to="/servicedetail5" class="link-box font-second">
                   <span>Explore More</span>
                   <i class="ot-flaticon-trajectory"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div class="col-xl-4 col-md-6">
               <div class="ot-image-box">
-                <a href="service-detail-1.html">
+                <Link to="/servicedetail6">
                   <img src="/images/services/service-box6.jpg" alt />
-                </a>
+                </Link>
                 <div class="content-box">
                   <h5 class="title-box">
-                    <a href="service-detail-1.html">Finance Planning</a>
+                    <Link to="/servicedetail6">Finance Planning</Link>
                   </h5>
                   <p>
                     We identify the mission, goals and strategic priorities of a
                     business project or non-profit organization.
                   </p>
                 </div>
-                <a href="service-detail-1.html" class="link-box font-second">
+                <Link to="/servicedetail6" class="link-box font-second">
                   <span>Explore More</span>
                   <i class="ot-flaticon-trajectory"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

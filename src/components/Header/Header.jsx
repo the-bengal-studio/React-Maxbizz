@@ -282,97 +282,6 @@ const Header = () => {
                 </div>
                 <div className="col-xl-3 align-self-center text-right">
                   <div className="octf-btn-cta justify-content-end align-items-center">
-                    {/* <div className="octf-cart octf-cta-header">
-                      <a
-                        className="cart-contents"
-                        href="cart-page.html"
-                        title="View your shopping cart"
-                      >
-                        <i className="ot-flaticon-business"></i>
-                        <span className="count">2</span>
-                      </a>
-
-                      <div className="site-header-cart">
-                        <div className="widget woocommerce widget_shopping_cart">
-                          <div className="widget_shopping_cart_content">
-                            <ul className="woocommerce-mini-cart cart_list product_list_widget ">
-                              <li className="woocommerce-mini-cart-item mini_cart_item">
-                                <a
-                                  className="remove remove_from_cart_button"
-                                  href="#"
-                                >
-                                  ×
-                                </a>
-                                <a href="single-product.html">
-                                  <img
-                                    src="images/product/product-3.png"
-                                    className
-                                    alt
-                                  />
-                                  Introduction to Business
-                                </a>
-                                <span className="quantity">
-                                  1 ×{" "}
-                                  <span className="amount">
-                                    <bdi>
-                                      <span>$</span>39.99
-                                    </bdi>
-                                  </span>
-                                </span>
-                              </li>
-                              <li className="woocommerce-mini-cart-item mini_cart_item">
-                                <a
-                                  className="remove remove_from_cart_button"
-                                  href="#"
-                                >
-                                  ×
-                                </a>
-                                <a href="single-product.html">
-                                  <img
-                                    src="images/product/product-9.png"
-                                    className
-                                    alt
-                                  />
-                                  Introduction to Marketing
-                                </a>
-                                <span className="quantity">
-                                  1 ×{" "}
-                                  <span className="amount">
-                                    <bdi>
-                                      <span>$</span>49.99
-                                    </bdi>
-                                  </span>
-                                </span>
-                              </li>
-                            </ul>
-
-                            <p className="woocommerce-mini-cart__total total">
-                              <strong>Subtotal:</strong>
-                              <span className="amount">
-                                <bdi>
-                                  <span>$</span>89.98
-                                </bdi>
-                              </span>
-                            </p>
-                            <p className="woocommerce-mini-cart__buttons buttons">
-                              <a
-                                href="cart-page.html"
-                                className="button wc-forward"
-                              >
-                                View cart
-                              </a>
-                              <a
-                                href="checkout-page.html"
-                                className="button checkout wc-forward"
-                              >
-                                Checkout
-                              </a>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div> */}
-
                     <div className="octf-search octf-cta-header">
                       <div className="toggle_search octf-cta-icons">
                         <i className="ot-flaticon-search-1"></i>
@@ -401,12 +310,6 @@ const Header = () => {
 
                     <div className="octf-btn-header">
                       <div className="ot-button">
-                        {/* <a
-                          href="contact.html"
-                          className="octf-btn octf-btn-main"
-                        >
-                          free quote
-                        </a> */}
                         <Link to="/contact" className="octf-btn octf-btn-main">
                           free quote
                         </Link>
@@ -489,10 +392,7 @@ const Header = () => {
                           >
                             <li className="menu-item-has-children">
                               <Link to="/">Home</Link>
-                              <span className="arrow" onClick={toggleSubMenu}>
-                                {/* Replace the content below with your arrow icon */}
-                                <i className="ot-flaticon-next"></i>
-                              </span>
+
                               <ul className="sub-menu">
                                 <li>
                                   <Link to="/">Home</Link>
@@ -512,7 +412,8 @@ const Header = () => {
                               </ul>
                             </li>
                             <li className="menu-item-has-children">
-                              <a href="#">Pages</a>
+                              {/* <a href="#">Pages</a> */}
+                              <Link to="/aboutus">Pages</Link>
                               <ul className="sub-menu">
                                 <li>
                                   <Link to="/aboutus">About Us</Link>

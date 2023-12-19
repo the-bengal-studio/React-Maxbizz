@@ -39,7 +39,7 @@ const Footer = () => {
                 <div class="col-6">
                   <ul class="ft-list-link">
                     <li>
-                      <a href="#">Contact us</a>
+                      <Link to="/contact">Contact Us</Link>
                     </li>
                     <li>
                       <a href="#">Connect</a>
@@ -70,7 +70,7 @@ const Footer = () => {
                       <a href="#">Disclosures</a>
                     </li>
                     <li>
-                      <a href="#">Services</a>
+                      <Link to="/service">Services</Link>
                     </li>
                   </ul>
                 </div>

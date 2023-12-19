@@ -32,16 +32,16 @@ const Blog = () => {
                         <a href="#">business</a>
                       </span>
                     </div>
-                    <a href="post.html">
+                    <Link to="/post">
                       <img src="images/blog/blog-1.jpg" alt />
-                    </a>
+                    </Link>
                   </div>
                   <div class="inner-post">
                     <div class="entry-header">
                       <h4 class="entry-title">
-                        <a href="post.html">
+                        <Link to="/post">
                           Contactless Payments’ Time Has Come
-                        </a>
+                        </Link>
                       </h4>
                     </div>
                     <div class="entry-summary the-excerpt">
@@ -66,9 +66,9 @@ const Blog = () => {
                     <span class="comment-num">
                       / <a href="#">3 Comments</a>
                     </span>
-                    <a class="btn-details" href="post.html">
+                    <Link to="/post" class="btn-details">
                       <i class="ot-flaticon-trajectory"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -89,9 +89,9 @@ const Blog = () => {
                   <div class="inner-post">
                     <div class="entry-header">
                       <h4 class="entry-title">
-                        <a href="post.html">
+                        <Link to="/post">
                           The Future of Retail: Asia’s Ecosystems
-                        </a>
+                        </Link>
                       </h4>
                     </div>
                     <div class="entry-summary the-excerpt">
@@ -116,9 +116,9 @@ const Blog = () => {
                     <span class="comment-num">
                       / <a href="#">3 Comments</a>
                     </span>
-                    <a class="btn-details" href="post.html">
+                    <Link to="/post" class="btn-details">
                       <i class="ot-flaticon-trajectory"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -136,9 +136,9 @@ const Blog = () => {
                   <div class="inner-post">
                     <div class="entry-header">
                       <h4 class="entry-title">
-                        <a href="post.html">
+                        <Link to="/post">
                           Digital Transformation Roadmap: Enablers
-                        </a>
+                        </Link>
                       </h4>
                     </div>
                     <div class="entry-summary the-excerpt">
@@ -163,39 +163,21 @@ const Blog = () => {
                     <span class="comment-num">
                       / <a href="#">3 Comments</a>
                     </span>
-                    <a class="btn-details" href="post.html">
+                    <Link to="/post" class="btn-details">
                       <i class="ot-flaticon-trajectory"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
               <article class="post-box">
                 <div class="post-inner">
-                  {/* <div class="entry-media">
-                    <div class="post-cat">
-                      <span class="posted-in">
-                        <a href="#">Development</a>
-                      </span>
-                    </div>
-                    <div class="gallery-post img-slider owl-carousel owl-theme">
-                      <div class="item-image">
-                        <img src="images/blog/gallery-1.jpg" alt />
-                      </div>
-                      <div class="item-image">
-                        <img src="images/blog/gallery-2.jpg" alt />
-                      </div>
-                      <div class="item-image">
-                        <img src="images/blog/gallery-2.jpg" alt />
-                      </div>
-                    </div>
-                  </div> */}
                   <BlogCarousel></BlogCarousel>
                   <div class="inner-post">
                     <div class="entry-header">
                       <h4 class="entry-title">
-                        <a href="post.html">
+                        <Link to="/post">
                           How to Write a Successful Grant Application
-                        </a>
+                        </Link>
                       </h4>
                     </div>
                     <div class="entry-summary the-excerpt">
@@ -220,9 +202,9 @@ const Blog = () => {
                     <span class="comment-num">
                       / <a href="#">3 Comments</a>
                     </span>
-                    <a class="btn-details" href="post.html">
+                    <Link to="/post" class="btn-details">
                       <i class="ot-flaticon-trajectory"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -237,9 +219,9 @@ const Blog = () => {
                     </div>
                     <div class="entry-header">
                       <h4 class="entry-title">
-                        <a href="post.html">
+                        <Link to="/post">
                           Crowdfunding. How to Get Funding Online?
-                        </a>
+                        </Link>
                       </h4>
                     </div>
                     <div class="entry-summary the-excerpt">
@@ -264,9 +246,9 @@ const Blog = () => {
                     <span class="comment-num">
                       / <a href="#">3 Comments</a>
                     </span>
-                    <a class="btn-details" href="post.html">
+                    <Link to="/post" class="btn-details">
                       <i class="ot-flaticon-trajectory"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -285,9 +267,9 @@ const Blog = () => {
                     </div>
                     <div class="entry-header">
                       <h4 class="entry-title">
-                        <a href="post.html">
+                        <Link to="/post">
                           In Media, Trimming Costs Boosts Value Transform
-                        </a>
+                        </Link>
                       </h4>
                     </div>
                     <div class="entry-summary the-excerpt">
@@ -312,9 +294,9 @@ const Blog = () => {
                     <span class="comment-num">
                       / <a href="#">3 Comments</a>
                     </span>
-                    <a class="btn-details" href="post.html">
+                    <Link to="/post" class="btn-details">
                       <i class="ot-flaticon-trajectory"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -331,9 +313,9 @@ const Blog = () => {
                     </div>
                     <div class="entry-header">
                       <h4 class="entry-title">
-                        <a href="post.html">
+                        <Link to="/post">
                           Entering the Next Phase of Digital Transformation
-                        </a>
+                        </Link>
                       </h4>
                     </div>
                     <div class="entry-summary the-excerpt">
@@ -358,9 +340,9 @@ const Blog = () => {
                     <span class="comment-num">
                       / <a href="#">3 Comments</a>
                     </span>
-                    <a class="btn-details" href="post.html">
+                    <Link to="/post" class="btn-details">
                       <i class="ot-flaticon-trajectory"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -471,15 +453,15 @@ const Blog = () => {
                 <ul class="recent-news clearfix">
                   <li class="clearfix">
                     <div class="thumb">
-                      <a href="post.html">
+                      <Link to="/post">
                         <img src="images/blog/recent-post-1.jpg" alt />
-                      </a>
+                      </Link>
                     </div>
                     <div class="entry-header">
                       <h6>
-                        <a href="post.html">
+                        <Link to="/post">
                           Contactless Payments’ Time Has Come
-                        </a>
+                        </Link>
                       </h6>
                       <span class="post-on">
                         <span class="entry-date">SEPTEMBER 4, 2023</span>
@@ -489,15 +471,15 @@ const Blog = () => {
 
                   <li class="clearfix">
                     <div class="thumb">
-                      <a href="post.html">
+                      <Link to="/post">
                         <img src="images/blog/recent-post-2.jpg" alt />
-                      </a>
+                      </Link>
                     </div>
                     <div class="entry-header">
                       <h6>
-                        <a href="post.html">
+                        <Link to="/post">
                           The Future of Retail: Asia’s Ecosystems
-                        </a>
+                        </Link>
                       </h6>
                       <span class="post-on">
                         <span class="entry-date">FEBRUARY 24, 2023</span>
@@ -507,15 +489,15 @@ const Blog = () => {
 
                   <li class="clearfix">
                     <div class="thumb">
-                      <a href="post.html">
+                      <Link to="/post">
                         <img src="images/blog/recent-post-3.jpg" alt />
-                      </a>
+                      </Link>
                     </div>
                     <div class="entry-header">
                       <h6>
-                        <a href="post.html">
+                        <Link to="/post">
                           Digital Transformation Roadmap: Enablers
-                        </a>
+                        </Link>
                       </h6>
                       <span class="post-on">
                         <span class="entry-date">AUGUST 14, 2019</span>
@@ -538,9 +520,9 @@ const Blog = () => {
                 </div>
               </aside>
               <aside class="widget widget_media_image">
-                <a href="contact.html">
+                <Link to="/contact">
                   <img src="images/promo-img.jpg" alt />
-                </a>
+                </Link>
               </aside>
             </div>
           </div>
