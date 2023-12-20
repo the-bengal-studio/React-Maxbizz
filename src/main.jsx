@@ -19,6 +19,7 @@ import ServiceDetail6 from "./pages/ServiceDetail6/ServiceDetail6.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Blog from "./pages/Blog/Blog.jsx";
 import Post from "./pages/Post/Post.jsx";
+import PortfolioDetails from "./pages/PortfolioDetails/PortfolioDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
       {
         path: "/post",
         element: <Post></Post>,
+      },
+      {
+        path: "/portfoliodetails",
+        element: <PortfolioDetails></PortfolioDetails>,
       },
     ],
   },

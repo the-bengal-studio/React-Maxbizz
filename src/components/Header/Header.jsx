@@ -229,9 +229,9 @@ const Header = () => {
                             </a>
                           </li>
                           <li>
-                            <a href="portfolio-details-1.html">
+                            <Link to="/portfoliodetails">
                               Portfolio Details
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -485,9 +485,9 @@ const Header = () => {
                                   </a>
                                 </li>
                                 <li>
-                                  <a href="portfolio-details-1.html">
+                                  <Link to="/portfoliodetails">
                                     Portfolio Details
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </li>
