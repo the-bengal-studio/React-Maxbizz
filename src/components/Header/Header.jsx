@@ -24,14 +24,6 @@ const Header = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // Toggle submenu visibility
-  const toggleSubMenu = (event) => {
-    const parentLi = event.currentTarget.parentNode;
-    const subMenu = parentLi.querySelector("> ul");
-    subMenu.classList.toggle("active");
-    event.currentTarget.classList.toggle("active");
-  };
-
   return (
     <div>
       <header
@@ -390,7 +382,10 @@ const Header = () => {
                             id="menu-mobile-main-menu"
                             className="mobile_mainmenu none-style"
                           >
-                            <li className="menu-item-has-children">
+                            <li
+                              className="menu-item-has-children"
+                              onClick={toggleMobileMenu}
+                            >
                               <Link to="/">Home</Link>
 
                               <ul className="sub-menu">
@@ -411,7 +406,10 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li className="menu-item-has-children">
+                            <li
+                              className="menu-item-has-children"
+                              onClick={toggleMobileMenu}
+                            >
                               {/* <a href="#">Pages</a> */}
                               <Link to="/aboutus">Pages</Link>
                               <ul className="sub-menu">
@@ -466,8 +464,12 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li className="menu-item-has-children">
-                              <a href="#">Portfolio</a>
+                            <li
+                              className="menu-item-has-children"
+                              onClick={toggleMobileMenu}
+                            >
+                              {/* <a href="#">Portfolio</a> */}
+                              <Link to="/portfoliodetails">Portfolio</Link>
                               <ul className="sub-menu">
                                 <li>
                                   <a href="portfolio-grid.html">
@@ -491,7 +493,10 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li className="menu-item-has-children">
+                            <li
+                              className="menu-item-has-children"
+                              onClick={toggleMobileMenu}
+                            >
                               <Link to="/service">Our Services</Link>
                               <ul className="sub-menu">
                                 <li>
@@ -526,7 +531,10 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li className="menu-item-has-children">
+                            <li
+                              className="menu-item-has-children"
+                              onClick={toggleMobileMenu}
+                            >
                               <Link to="/blog">Blog</Link>
                               <ul className="sub-menu">
                                 <li>
@@ -537,7 +545,10 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li className="current-menu-item">
+                            <li
+                              className="current-menu-item"
+                              onClick={toggleMobileMenu}
+                            >
                               <Link to="/contact">Contact</Link>
                             </li>
                           </ul>
