@@ -386,9 +386,15 @@ const Header = () => {
                               className="menu-item-has-children"
                               onClick={toggleMobileMenu}
                             >
+                              <span className="arrow">
+                                <i className="ot-flaticon-next"></i>
+                              </span>
                               <Link to="/">Home</Link>
 
-                              <ul className="sub-menu">
+                              <ul
+                                className="sub-menu"
+                                style={{ display: "block" }}
+                              >
                                 <li>
                                   <Link to="/">Home</Link>
                                 </li>
@@ -410,7 +416,10 @@ const Header = () => {
                               className="menu-item-has-children"
                               onClick={toggleMobileMenu}
                             >
-                              {/* <a href="#">Pages</a> */}
+                              <span className="arrow">
+                                <i className="ot-flaticon-next"></i>
+                              </span>
+
                               <Link to="/aboutus">Pages</Link>
                               <ul className="sub-menu">
                                 <li>
@@ -468,7 +477,9 @@ const Header = () => {
                               className="menu-item-has-children"
                               onClick={toggleMobileMenu}
                             >
-                              {/* <a href="#">Portfolio</a> */}
+                              <span className="arrow">
+                                <i className="ot-flaticon-next"></i>
+                              </span>
                               <Link to="/portfoliodetails">Portfolio</Link>
                               <ul className="sub-menu">
                                 <li>
@@ -497,6 +508,9 @@ const Header = () => {
                               className="menu-item-has-children"
                               onClick={toggleMobileMenu}
                             >
+                              <span className="arrow">
+                                <i className="ot-flaticon-next"></i>
+                              </span>
                               <Link to="/service">Our Services</Link>
                               <ul className="sub-menu">
                                 <li>
@@ -535,6 +549,9 @@ const Header = () => {
                               className="menu-item-has-children"
                               onClick={toggleMobileMenu}
                             >
+                              <span className="arrow">
+                                <i className="ot-flaticon-next"></i>
+                              </span>
                               <Link to="/blog">Blog</Link>
                               <ul className="sub-menu">
                                 <li>
