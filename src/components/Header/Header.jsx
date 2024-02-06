@@ -4,6 +4,15 @@ import { Link } from "react-router-dom";
 const Header = () => {
   //mobile menu
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // const [isArrowActive, setArrowActive] = useState(false);
+  // const [isSubMenuVisible, setSubMenuVisible] = useState(false);
+
+  const [isHomeSubMenuVisible, setHomeSubMenuVisible] = useState(false);
+  const [isPagesSubMenuVisible, setPagesSubMenuVisible] = useState(false);
+  const [isPortfolioSubMenuVisible, setPortfolioSubMenuVisible] =
+    useState(false);
+  const [isServicesSubMenuVisible, setServicesSubMenuVisible] = useState(false);
+  const [isBlogSubMenuVisible, setBlogSubMenuVisible] = useState(false);
 
   useEffect(() => {
     // Add or remove classes on the body based on the state
@@ -20,9 +29,16 @@ const Header = () => {
   }, [isMobileMenuOpen]);
 
   const toggleMobileMenu = (e) => {
-    e.preventDefault();
+    if (e.target.tagName !== "A") {
+      e.preventDefault();
+    }
     setMobileMenuOpen(!isMobileMenuOpen);
   };
+  // const toggleArrow = (e) => {
+  //   e.preventDefault();
+  //   setArrowActive(!isArrowActive);
+  //   setSubMenuVisible(!isSubMenuVisible);
+  // };
 
   return (
     <div>
@@ -350,6 +366,9 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
+
+                  {/* mobile menu start */}
+
                   <div className="octf-menu-mobile octf-cta-header text-left">
                     <div
                       id="mmenu-toggle"
@@ -382,18 +401,29 @@ const Header = () => {
                             id="menu-mobile-main-menu"
                             className="mobile_mainmenu none-style"
                           >
-                            <li
-                              className="menu-item-has-children"
-                              onClick={toggleMobileMenu}
-                            >
-                              <span className="arrow">
+                            <li className="menu-item-has-children">
+                              <span
+                                className={`arrow ${
+                                  isHomeSubMenuVisible ? "active" : ""
+                                }`}
+                                onClick={() =>
+                                  setHomeSubMenuVisible(!isHomeSubMenuVisible)
+                                }
+                              >
                                 <i className="ot-flaticon-next"></i>
                               </span>
-                              <Link to="/">Home</Link>
+                              <Link to="/" onClick={toggleMobileMenu}>
+                                Home
+                              </Link>
 
                               <ul
                                 className="sub-menu"
-                                style={{ display: "block" }}
+                                onClick={toggleMobileMenu}
+                                style={{
+                                  display: isHomeSubMenuVisible
+                                    ? "block"
+                                    : "none",
+                                }}
                               >
                                 <li>
                                   <Link to="/">Home</Link>
@@ -412,16 +442,30 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li
-                              className="menu-item-has-children"
-                              onClick={toggleMobileMenu}
-                            >
-                              <span className="arrow">
+                            <li className="menu-item-has-children">
+                              <span
+                                className={`arrow ${
+                                  isPagesSubMenuVisible ? "active" : ""
+                                }`}
+                                onClick={() =>
+                                  setPagesSubMenuVisible(!isPagesSubMenuVisible)
+                                }
+                              >
                                 <i className="ot-flaticon-next"></i>
                               </span>
 
-                              <Link to="/aboutus">Pages</Link>
-                              <ul className="sub-menu">
+                              <Link to="/aboutus" onClick={toggleMobileMenu}>
+                                Pages
+                              </Link>
+                              <ul
+                                className="sub-menu"
+                                onClick={toggleMobileMenu}
+                                style={{
+                                  display: isPagesSubMenuVisible
+                                    ? "block"
+                                    : "none",
+                                }}
+                              >
                                 <li>
                                   <Link to="/aboutus">About Us</Link>
                                 </li>
@@ -473,15 +517,34 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li
-                              className="menu-item-has-children"
-                              onClick={toggleMobileMenu}
-                            >
-                              <span className="arrow">
+                            <li className="menu-item-has-children">
+                              <span
+                                className={`arrow ${
+                                  isPortfolioSubMenuVisible ? "active" : ""
+                                }`}
+                                onClick={() =>
+                                  setPortfolioSubMenuVisible(
+                                    !isPortfolioSubMenuVisible
+                                  )
+                                }
+                              >
                                 <i className="ot-flaticon-next"></i>
                               </span>
-                              <Link to="/portfoliodetails">Portfolio</Link>
-                              <ul className="sub-menu">
+                              <Link
+                                to="/portfoliodetails"
+                                onClick={toggleMobileMenu}
+                              >
+                                Portfolio
+                              </Link>
+                              <ul
+                                className="sub-menu"
+                                onClick={toggleMobileMenu}
+                                style={{
+                                  display: isPortfolioSubMenuVisible
+                                    ? "block"
+                                    : "none",
+                                }}
+                              >
                                 <li>
                                   <a href="portfolio-grid.html">
                                     Portfolio Grid
@@ -504,15 +567,31 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li
-                              className="menu-item-has-children"
-                              onClick={toggleMobileMenu}
-                            >
-                              <span className="arrow">
+                            <li className="menu-item-has-children">
+                              <span
+                                className={`arrow ${
+                                  isServicesSubMenuVisible ? "active" : ""
+                                }`}
+                                onClick={() => {
+                                  setServicesSubMenuVisible(
+                                    !isServicesSubMenuVisible
+                                  );
+                                }}
+                              >
                                 <i className="ot-flaticon-next"></i>
                               </span>
-                              <Link to="/service">Our Services</Link>
-                              <ul className="sub-menu">
+                              <Link to="/service" onClick={toggleMobileMenu}>
+                                Our Services
+                              </Link>
+                              <ul
+                                className="sub-menu"
+                                onClick={toggleMobileMenu}
+                                style={{
+                                  display: isServicesSubMenuVisible
+                                    ? "block"
+                                    : "none",
+                                }}
+                              >
                                 <li>
                                   <Link to="/servicedetail1">
                                     Marketing Research
@@ -545,15 +624,29 @@ const Header = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li
-                              className="menu-item-has-children"
-                              onClick={toggleMobileMenu}
-                            >
-                              <span className="arrow">
+                            <li className="menu-item-has-children">
+                              <span
+                                className={`arrow ${
+                                  isBlogSubMenuVisible ? "active" : ""
+                                }`}
+                                onClick={() =>
+                                  setBlogSubMenuVisible(!isBlogSubMenuVisible)
+                                }
+                              >
                                 <i className="ot-flaticon-next"></i>
                               </span>
-                              <Link to="/blog">Blog</Link>
-                              <ul className="sub-menu">
+                              <Link to="/blog" onClick={toggleMobileMenu}>
+                                Blog
+                              </Link>
+                              <ul
+                                className="sub-menu"
+                                onClick={toggleMobileMenu}
+                                style={{
+                                  display: isBlogSubMenuVisible
+                                    ? "block"
+                                    : "none",
+                                }}
+                              >
                                 <li>
                                   <Link to="/blog">Blog Listing</Link>
                                 </li>
