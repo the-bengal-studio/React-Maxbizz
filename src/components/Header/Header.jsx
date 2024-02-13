@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 const Header = () => {
   //mobile menu
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  // const [isArrowActive, setArrowActive] = useState(false);
-  // const [isSubMenuVisible, setSubMenuVisible] = useState(false);
 
   const [isHomeSubMenuVisible, setHomeSubMenuVisible] = useState(false);
   const [isPagesSubMenuVisible, setPagesSubMenuVisible] = useState(false);
@@ -34,11 +32,6 @@ const Header = () => {
     }
     setMobileMenuOpen(!isMobileMenuOpen);
   };
-  // const toggleArrow = (e) => {
-  //   e.preventDefault();
-  //   setArrowActive(!isArrowActive);
-  //   setSubMenuVisible(!isSubMenuVisible);
-  // };
 
   return (
     <div>
